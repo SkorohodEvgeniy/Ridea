@@ -1,0 +1,65 @@
+@media(min-width:1025px) {
+    .header {
+        &__menu {
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        &__list {
+
+            li {
+                margin-left: 30px;
+
+                &:first-child {
+                    margin-left: 45px;
+                }
+            }
+        }
+
+        &__social {
+            margin-left: auto;
+
+            &-link {
+                &:not(:first-child) {
+                    margin-left: 30px;
+                }
+            }
+        }
+
+        &__dealer {
+            margin-left: 40px;
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .header {
+        &__menu {}
+
+        &__list {
+            margin-bottom: 82px;
+
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        &__social {
+
+            margin-bottom: 30px;
+
+            &-link {
+                &:not(:last-child) {
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+}

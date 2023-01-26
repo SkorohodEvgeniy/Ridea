@@ -58,13 +58,7 @@
     position: relative;
   }
 
-  &__list li {
-    margin-left: 30px;
 
-    &:first-child {
-      margin-left: 45px;
-    }
-  }
 
   &__list li a {
     color: #0C2855;
@@ -78,13 +72,36 @@
     display: none;
   }
 
+  &__menu {}
+
+  &__social {
+    z-index: 2;
+    position: relative;
+
+    &-link {}
+  }
+
+  &__dealer {
+    z-index: 2;
+
+    &-link {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      text-transform: uppercase;
+      color: #0C2855;
+      padding: 15px 40px;
+      background: #F3F3F3;
+      border-radius: 100px;
+    }
+  }
 }
 
 .main {
   padding-top: 100px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   body.lock {
     overflow: hidden;
   }
@@ -179,7 +196,7 @@
       height: 100%;
       overflow: auto;
       background-color: #0C2855;
-      padding: 70px 0 0 0;
+      padding: 170px 0 0 0;
       -webkit-transition: all 0.5s ease 0s;
       -o-transition: all 0.5s ease 0s;
       transition: all 0.5s ease 0s;
@@ -248,3 +265,7 @@ body {
   padding: 30px;
   color: #fff;
 }
+
+
+
+@import 'media';
