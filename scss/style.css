@@ -347,6 +347,11 @@ body {
   }
   .header__social-mob .header__social-dealer {
     margin-top: 30px;
+    padding: 0 15px;
+  }
+  .header__social-mob .header__social-dealer a.dealer {
+    width: 100%;
+    display: block;
   }
   .header__burger {
     width: 50px;
