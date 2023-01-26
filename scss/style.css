@@ -23,6 +23,7 @@
   padding: 0;
   margin: 0;
   border: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -65,6 +66,7 @@ body {
 ._container__big {
   max-width: 1660px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 /*Menu Burger*/
@@ -293,11 +295,22 @@ body {
 }
 
 .footer {
-  font-size: 24px;
+  padding: 50px 0;
   background-color: #0C2855;
-  text-align: center;
-  padding: 30px;
-  color: #fff;
+}
+.footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.footer__item-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (min-width: 1025px) {
@@ -318,6 +331,12 @@ body {
   }
   .header__social-dealer {
     margin-left: 40px;
+  }
+}
+@media (min-width: 767px) {
+  .footer__lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 @media (min-width: 630px) {

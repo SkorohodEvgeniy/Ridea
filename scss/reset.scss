@@ -6,20 +6,25 @@
   padding: 0;
   margin: 0;
   border: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 ul,
 li,
 ol {
   list-style: none;
 }
+
 img {
   max-width: 100%;
   vertical-align: top;
 }
+
 a {
   text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -29,6 +34,7 @@ h6 {
   font-weight: inherit;
   font-size: inherit;
 }
+
 html,
 body {
   height: 100%;
@@ -39,7 +45,9 @@ body {
   font-size: 1rem;
   background-color: #fff;
 }
-._container__big{
+
+._container__big {
   max-width: 1660px;
   margin: 0 auto;
+  padding: 0 15px;
 }
