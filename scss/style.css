@@ -345,7 +345,11 @@ body {
   .header__body > .header__social {
     display: none;
   }
-  .header__social-mob > div {
+  .header__social-mob .header__social-dealer {
     margin-top: 30px;
+  }
+  .header__burger {
+    width: 50px;
+    height: 50px;
   }
 }
