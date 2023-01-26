@@ -4,7 +4,8 @@ let headerMenu = document.querySelector(".header__menu");
 let body = document.getElementsByTagName("body");
 
 function toggleBurgerMenu() {
-  headerBurger, headerMenu.classList.toggle("active");
+  headerBurger.classList.toggle("active");
+  headerMenu.classList.toggle("active");
   body.classList.toggle("lock");
 }
 
