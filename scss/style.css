@@ -1,4 +1,21 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
+@font-face {
+  font-family: 'Xolonium';
+  src: url("Xolonium.eot");
+  src: local("Xolonium"), url("/assets/fonts/Xolonium.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Xolonium.woff2") format("woff2"), url("/assets/fonts/Xolonium.woff") format("woff"), url("/assets/fonts/Xolonium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  display: swap;
+}
+@font-face {
+  font-family: 'Xolonium';
+  src: url("Xolonium-Bold.eot");
+  src: local("Xolonium Bold"), local("Xolonium-Bold"), url("/assets/fonts/Xolonium-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Xolonium-Bold.woff2") format("woff2"), url("/assets/fonts/Xolonium-Bold.woff") format("woff"), url("/assets/fonts/Xolonium-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  display: swap;
+}
 /*Reset*/
 *,
 *::after,
@@ -39,6 +56,10 @@ html,
 body {
   height: 100%;
   line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
 }
 
 /*Menu Burger*/
@@ -79,8 +100,8 @@ body {
 }
 .header__logo {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 60px;
-          flex: 0 0 60px;
+      -ms-flex: 0 0 227px;
+          flex: 0 0 227px;
   z-index: 3;
 }
 .header__list {
