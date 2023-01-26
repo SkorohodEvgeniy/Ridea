@@ -131,10 +131,10 @@ body {
   z-index: 2;
   position: relative;
 }
-.header__dealer {
+.header__social-dealer {
   z-index: 2;
 }
-.header__dealer-link {
+.header__social-dealer--link {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -181,6 +181,9 @@ body {
     -ms-flex-align: end;
     align-items: flex-end;
     padding-right: 10px;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
   }
   .header__burger span {
     background-color: #0C2855;
@@ -247,6 +250,11 @@ body {
   .header__list li a {
     color: #fff;
   }
+  .header__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*----Footer down (Липкий Footer)---------*/
 html,
@@ -293,15 +301,6 @@ body {
 }
 
 @media (min-width: 1025px) {
-  .header__menu {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .header__list li {
     margin-left: 30px;
   }
@@ -309,13 +308,21 @@ body {
     margin-left: 45px;
   }
   .header__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: auto;
   }
   .header__social-link:not(:first-child) {
     margin-left: 30px;
   }
-  .header__dealer {
+  .header__social-dealer {
     margin-left: 40px;
+  }
+}
+@media (min-width: 630px) {
+  .header__menu .header__social-mob {
+    display: none;
   }
 }
 @media (max-width: 1024px) {
@@ -325,10 +332,20 @@ body {
   .header__list li:not(:last-child) {
     margin-bottom: 40px;
   }
-  .header__social {
-    margin-bottom: 30px;
+  .header__social-link {
+    margin-right: 30px;
   }
-  .header__social-link:not(:last-child) {
-    margin-right: 50px;
+}
+@media (max-width: 768px) {
+  .header__social-link {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 630px) {
+  .header__body > .header__social {
+    display: none;
+  }
+  .header__social-mob > div {
+    margin-top: 30px;
   }
 }

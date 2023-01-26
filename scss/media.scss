@@ -1,14 +1,5 @@
 @media(min-width:1025px) {
     .header {
-        &__menu {
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
-            width: 100%;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-        }
 
         &__list {
 
@@ -22,6 +13,9 @@
         }
 
         &__social {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
             margin-left: auto;
 
             &-link {
@@ -29,10 +23,21 @@
                     margin-left: 30px;
                 }
             }
+
+            &-dealer {
+                margin-left: 40px;
+            }
         }
 
-        &__dealer {
-            margin-left: 40px;
+    }
+}
+
+@media(min-width:630px) {
+    .header {
+        &__menu {
+            .header__social-mob {
+                display: none;
+            }
         }
     }
 }
@@ -53,11 +58,48 @@
 
         &__social {
 
-            margin-bottom: 30px;
+            &-link {
+                margin-right: 30px;
+
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .header {
+        &__menu {}
+
+        &__list {
+
+            li {
+                &:not(:last-child) {}
+            }
+        }
+
+        &__social {
 
             &-link {
-                &:not(:last-child) {
-                    margin-right: 50px;
+                margin-right: 20px;
+
+            }
+        }
+    }
+}
+
+@media(max-width:630px) {
+    .header {
+        &__body {
+            >.header__social {
+                display: none;
+            }
+
+        }
+
+        &__social {
+            &-mob {
+                >div {
+                    margin-top: 30px;
                 }
             }
         }

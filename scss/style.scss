@@ -79,22 +79,23 @@
     position: relative;
 
     &-link {}
-  }
 
-  &__dealer {
-    z-index: 2;
+    &-dealer {
+      z-index: 2;
 
-    &-link {
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 19px;
-      text-transform: uppercase;
-      color: #0C2855;
-      padding: 15px 40px;
-      background: #F3F3F3;
-      border-radius: 100px;
+      &--link {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #0C2855;
+        padding: 15px 40px;
+        background: #F3F3F3;
+        border-radius: 100px;
+      }
     }
   }
+
 }
 
 .main {
@@ -135,6 +136,9 @@
       -ms-flex-align: end;
       align-items: flex-end;
       padding-right: 10px;
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
 
       span {
         background-color: #0C2855;
@@ -216,6 +220,12 @@
           color: #fff;
         }
       }
+    }
+
+    &__social {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
     }
   }
 
