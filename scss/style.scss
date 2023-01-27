@@ -274,9 +274,9 @@ body {
 .slider {
   &__first {
 
-    background: url(/assets/img/icon/filter.svg) 50% 50% repeat, -o-linear-gradient(255.34deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.svg) 0 0 repeat;
+    background: url(/assets/img/icon/filter.svg) 50% 50% no-repeat, -o-linear-gradient(255.34deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.svg) 0 0 repeat;
 
-    background: url(/assets/img/icon/filter.svg) 50% 50% repeat, linear-gradient(194.66deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.svg) 0 0 repeat;
+    background: url(/assets/img/icon/filter.svg) 50% 50% no-repeat, linear-gradient(194.66deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.svg) 0 0 repeat;
     padding-bottom: 60px;
 
     &--lists {
@@ -302,6 +302,28 @@ body {
           }
         }
       }
+
+      .slick-arrow {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #a5dde234;
+        -webkit-transition: all ease .5s;
+        -o-transition: all ease .5s;
+        transition: all ease .5s;
+
+        &:before {
+          color: #0c2855c5;
+        }
+
+        &:hover {
+          background-color: #A5DDE2;
+
+          &::before {
+            color: #0C2855;
+          }
+        }
+      }
     }
 
     &--item {
@@ -319,10 +341,11 @@ body {
         font-weight: 700;
         font-size: 50px;
         line-height: 60px;
+        margin: 0 auto;
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
-
+        max-width: 680px;
       }
 
       &-img {

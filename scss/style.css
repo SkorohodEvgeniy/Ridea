@@ -541,8 +541,8 @@ body {
 
 /*-----------All Slider style------------------------------*/
 .slider__first {
-  background: url(/assets/img/icon/filter.svg) 50% 50% repeat, -o-linear-gradient(255.34deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.svg) 0 0 repeat;
-  background: url(/assets/img/icon/filter.svg) 50% 50% repeat, linear-gradient(194.66deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.svg) 0 0 repeat;
+  background: url(/assets/img/icon/filter.svg) 50% 50% no-repeat, -o-linear-gradient(255.34deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.svg) 0 0 repeat;
+  background: url(/assets/img/icon/filter.svg) 50% 50% no-repeat, linear-gradient(194.66deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.svg) 0 0 repeat;
   padding-bottom: 60px;
 }
 .slider__first--lists {
@@ -560,6 +560,24 @@ body {
 .slider__first--lists .slick-dots li.slick-active button {
   background-color: #fff;
 }
+.slider__first--lists .slick-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #a5dde234;
+  -webkit-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+}
+.slider__first--lists .slick-arrow:before {
+  color: #0c2855c5;
+}
+.slider__first--lists .slick-arrow:hover {
+  background-color: #A5DDE2;
+}
+.slider__first--lists .slick-arrow:hover::before {
+  color: #0C2855;
+}
 .slider__first--item-subtitle {
   font-weight: 400;
   font-size: 1rem;
@@ -573,9 +591,11 @@ body {
   font-weight: 700;
   font-size: 50px;
   line-height: 60px;
+  margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  max-width: 680px;
 }
 .slider__first--item-img {
   max-width: 328px;
@@ -755,6 +775,12 @@ body {
     max-width: 139px;
   }
 }
+@media (max-width: 768px) {
+  .slider__first--item-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
 @media (max-width: 767px) {
   .header__social-link {
     margin-right: 20px;
@@ -802,5 +828,16 @@ body {
   .header__burger {
     width: 50px;
     height: 50px;
+  }
+
+  .slider__first--item-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .slider__first .slick-next {
+    right: 0;
+  }
+  .slider__first .slick-prev {
+    left: 0;
   }
 }
