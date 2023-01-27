@@ -587,7 +587,7 @@ body {
   /*Magic*/
 }
 
-/*-----------All Slider style------------------------------*/
+/*-----------Home Slider style------------------------------*/
 .slider__first {
   background: url(/assets/img/icon/filter.svg) 50% 50% no-repeat, linear-gradient(194.66deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.svg) 0 0 repeat;
   padding-bottom: 60px;
@@ -714,11 +714,23 @@ body {
   padding-bottom: 80px;
   background-color: #A5DDE2;
 }
-.catalog__home--lists {
-  margin-bottom: 70px;
-}
 .catalog__home--lists.slick-initialized .slick-slide {
   margin: 0 10px;
+}
+.catalog__home--lists .slick-dots {
+  margin-bottom: -60px;
+}
+.catalog__home--lists .slick-dots li button {
+  background: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.catalog__home--lists .slick-dots li.slick-active button {
+  background-color: #0C2855;
+}
+.catalog__home .slick-dotted.slick-slider {
+  margin-bottom: 100px;
 }
 .catalog__home--item {
   background: linear-gradient(147.14deg, rgba(255, 255, 255, 0) 19.62%, #FFFFFF 55.38%), url(/assets/img/catalog/category-bg.png) 0 0 repeat, #fff;

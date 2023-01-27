@@ -329,7 +329,7 @@ body {
   /*Magic*/
 }
 
-/*-----------All Slider style------------------------------*/
+/*-----------Home Slider style------------------------------*/
 .slider {
   &__first {
 
@@ -496,11 +496,31 @@ body {
     background-color: #A5DDE2;
 
     &--lists {
-      margin-bottom: 70px;
-
+      
       &.slick-initialized .slick-slide {
         margin: 0 10px;
       }
+      .slick-dots{
+        margin-bottom: -60px;
+        li{
+          button{
+            background: #fff;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+          }
+          &.slick-active {
+            button {
+              background-color: #0C2855;
+            }
+          }
+        }
+        
+      }
+    }
+    .slick-dotted.slick-slider{
+      margin-bottom: 100px;
+
     }
 
     &--item {
