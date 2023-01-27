@@ -26,6 +26,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".catalog__home--lists").slick({
     infinite: true,
+    autoplay:true,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 2,
@@ -49,6 +50,7 @@ $(document).ready(function () {
 /*----------Slider Blog Home-----------*/
 $(document).ready(function () {
   $(".blog__body--lists").slick({
+    autoplay:true,
     infinite: true,
     speed: 300,
     slidesToShow: 4,
