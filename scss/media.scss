@@ -100,6 +100,18 @@
         }
     }
 
+    .about__brend {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+
+        &--img {
+            margin-right: 0;
+            margin-top: 40px;
+        }
+    }
+
     .footer {
         &__item {
             &--form-fields {
@@ -134,6 +146,21 @@
                 }
             }
         }
+    }
+
+    .heading__box {
+        padding-bottom: 20px;
+
+        &--title {
+            font-size: 30px;
+            line-height: 36px;
+        }
+
+    }
+
+    .about__brend {
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }
 
@@ -243,5 +270,10 @@
                 left: 0;
             }
         }
+    }
+
+    .about__brend {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

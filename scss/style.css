@@ -503,6 +503,19 @@ body {
     display: flex;
   }
 }
+/*---------Template----------------------*/
+.heading__box {
+  padding: 60px 0 40px;
+}
+.heading__box--title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0C2855;
+}
+
 /*----Footer down (Липкий Footer)---------*/
 html,
 body {
@@ -621,6 +634,39 @@ body {
 }
 .slider__first--item-btn a:hover {
   background-color: #fff;
+}
+
+/*----------------Home Page-----------------*/
+.about__brend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 175px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+.about__brend--img {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
+  margin-right: 70px;
+}
+.about__brend--text {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #0C2855;
+  line-height: 22px;
+}
+.about__brend--text p:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .footer {
@@ -761,6 +807,17 @@ body {
     margin-right: 30px;
   }
 
+  .about__brend {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .about__brend--img {
+    margin-right: 0;
+    margin-top: 40px;
+  }
+
   .footer__item--form-fields {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -779,6 +836,19 @@ body {
   .slider__first--item-title {
     font-size: 40px;
     line-height: 48px;
+  }
+
+  .heading__box {
+    padding-bottom: 20px;
+  }
+  .heading__box--title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .about__brend {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 @media (max-width: 767px) {
@@ -839,5 +909,10 @@ body {
   }
   .slider__first .slick-prev {
     left: 0;
+  }
+
+  .about__brend {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
