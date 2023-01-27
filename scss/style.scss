@@ -74,8 +74,6 @@
     display: none;
   }
 
-  &__menu {}
-
   &__social {
     z-index: 2;
     position: relative;
@@ -94,6 +92,29 @@
         padding: 15px 40px;
         background: #F3F3F3;
         border-radius: 100px;
+      }
+    }
+  }
+
+  &__lang{
+    margin-left: 50px;
+    ul{
+      z-index: 2;
+      position: relative;
+      display: flex;
+      align-items: center;
+      li{
+        color: #919191;
+        &:not(:last-child){
+          margin-right: 5px;
+        }
+        a{
+          color: #919191;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          text-transform: uppercase;
+        }
       }
     }
   }
@@ -365,10 +386,12 @@ body {
 
       .slick-next {
         right: 0;
+        z-index: 3;
       }
 
       .slick-prev {
         left: 0;
+        z-index: 3;
       }
     }
 

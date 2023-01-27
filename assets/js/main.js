@@ -39,12 +39,9 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 321,
-        settings: {
-          slidesToShow: 1,
-          rows: 1,
-        },
-      },
+        breakpoint: 370,
+        settings: "unslick"
+      }
     ],
   });
 });

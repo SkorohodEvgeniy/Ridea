@@ -112,6 +112,22 @@
         }
     }
 
+    .catalog {
+        &__home {
+            &--lists {
+                grid-template-columns: 1fr;
+            }
+
+            &--item {
+                &-title {
+                    font-size: 1rem;
+                    line-height: 22px;
+                }
+            }
+        }
+
+    }
+
     .footer {
         &__item {
             &--form-fields {
