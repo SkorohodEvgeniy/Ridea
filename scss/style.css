@@ -662,6 +662,41 @@ body {
   margin-bottom: 20px;
 }
 
+/*-----------Catalog----------------*/
+.catalog__home {
+  background-color: #A5DDE2;
+}
+.catalog__home--lists {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.catalog__home--item {
+  background: linear-gradient(147.14deg, rgba(255, 255, 255, 0) 19.62%, #FFFFFF 55.38%), url(/assets/img/catalog/category-bg.png) 0 0 repeat, #fff;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+.catalog__home--item-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 50px 10px 50px;
+}
+.catalog__home--item-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #0C2855;
+}
+
+/*-------------Footer---------------------*/
 .footer {
   padding: 50px 0;
   background-color: #0C2855;
