@@ -13,5 +13,11 @@ headerBurger.addEventListener("click", toggleBurgerMenu);
 
 /*----------Slider First-----------*/
 $(document).ready(function () {
-  $(".slider__first--lists").slick({});
+  $(".slider__first--lists").slick({
+    autoplay: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    dots: true,
+  });
 });

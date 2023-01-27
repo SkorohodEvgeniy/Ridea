@@ -543,10 +543,22 @@ body {
 .slider__first {
   background: url(/assets/img/icon/filter.svg) 50% 50% repeat, -o-linear-gradient(255.34deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.svg) 0 0 repeat;
   background: url(/assets/img/icon/filter.svg) 50% 50% repeat, linear-gradient(194.66deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.svg) 0 0 repeat;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 .slider__first--lists {
   padding: 50px 0 41px;
+}
+.slider__first--lists.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.slider__first--lists .slick-dots li button {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+.slider__first--lists .slick-dots li.slick-active button {
+  background-color: #fff;
 }
 .slider__first--item-subtitle {
   font-weight: 400;
@@ -555,6 +567,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin-bottom: 10px;
 }
 .slider__first--item-title {
   font-weight: 700;
