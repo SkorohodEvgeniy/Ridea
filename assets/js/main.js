@@ -22,7 +22,18 @@ $(document).ready(function () {
   });
 });
 
-/*----------Slider Blog-----------*/
+/*----------Slider Catalog Home-----------*/
+$(document).ready(function () {
+  $(".catalog__home--lists").slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    dots: true,
+  });
+});
+
+/*----------Slider Blog Home-----------*/
 $(document).ready(function () {
   $(".blog__body--lists").slick({
     infinite: true,

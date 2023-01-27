@@ -701,10 +701,10 @@ body {
   background-color: #A5DDE2;
 }
 .catalog__home--lists {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-bottom: 70px;
+}
+.catalog__home--lists.slick-initialized .slick-slide {
+  margin: 0 10px;
 }
 .catalog__home--item {
   background: -o-linear-gradient(302.86deg, rgba(255, 255, 255, 0) 19.62%, #FFFFFF 55.38%), url(/assets/img/catalog/category-bg.png) 0 0 repeat, #fff;
