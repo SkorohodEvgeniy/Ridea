@@ -539,6 +539,56 @@ body {
   /*Magic*/
 }
 
+/*-----------All Slider style------------------------------*/
+.slider__first {
+  background: -o-linear-gradient(255.34deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.png) 0 0 repeat;
+  background: linear-gradient(194.66deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.png) 0 0 repeat;
+  padding-bottom: 50px;
+}
+.slider__first--lists {
+  padding: 50px 0 41px;
+}
+.slider__first--item-subtitle {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.slider__first--item-title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.slider__first--item-img {
+  max-width: 328px;
+  margin: 0 auto;
+}
+.slider__first--item-btn {
+  text-align: center;
+}
+.slider__first--item-btn a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #0C2855;
+  background: #A5DDE2;
+  border-radius: 100px;
+  display: inline-block;
+  padding: 15px 40px;
+  -webkit-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+}
+.slider__first--item-btn a:hover {
+  background-color: #fff;
+}
+
 .footer {
   padding: 50px 0;
   background-color: #0C2855;
