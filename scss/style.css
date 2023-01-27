@@ -73,10 +73,10 @@ body {
 .slick-slider {
   position: relative;
   display: block;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -103,9 +103,6 @@ body {
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
@@ -189,7 +186,6 @@ body {
   color: transparent;
   top: 50%;
   -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   padding: 0;
   border: none;
@@ -437,7 +433,6 @@ body {
     width: 30px;
     height: 2px;
     -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     margin: 8px 0 8px;
   }
@@ -447,7 +442,6 @@ body {
     width: 30px;
     height: 2px;
     -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
   }
   .header__burger:after {
@@ -455,19 +449,16 @@ body {
   }
   .header__burger.active span {
     -webkit-transform: scale(0);
-    -ms-transform: scale(0);
     transform: scale(0);
   }
   .header__burger.active::before {
     -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     position: absolute;
     top: 26px;
   }
   .header__burger.active::after {
     -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     top: 26px;
     position: absolute;
@@ -483,7 +474,6 @@ body {
     background-color: #0C2855;
     padding: 170px 0 0 0;
     -webkit-transition: all 0.5s ease 0s;
-    -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
     z-index: 2;
   }
@@ -554,7 +544,6 @@ body {
 
 /*-----------All Slider style------------------------------*/
 .slider__first {
-  background: url(/assets/img/icon/filter.svg) 50% 50% no-repeat, -o-linear-gradient(255.34deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.svg) 0 0 repeat;
   background: url(/assets/img/icon/filter.svg) 50% 50% no-repeat, linear-gradient(194.66deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.svg) 0 0 repeat;
   padding-bottom: 60px;
 }
@@ -579,7 +568,6 @@ body {
   border-radius: 50%;
   background-color: #a5dde234;
   -webkit-transition: all ease .5s;
-  -o-transition: all ease .5s;
   transition: all ease .5s;
 }
 .slider__first--lists .slick-arrow:before {
@@ -590,6 +578,12 @@ body {
 }
 .slider__first--lists .slick-arrow:hover::before {
   color: #0C2855;
+}
+.slider__first--lists .slick-next {
+  right: 0;
+}
+.slider__first--lists .slick-prev {
+  left: 0;
 }
 .slider__first--item-subtitle {
   font-weight: 400;
@@ -629,7 +623,6 @@ body {
   display: inline-block;
   padding: 15px 40px;
   -webkit-transition: all ease .5s;
-  -o-transition: all ease .5s;
   transition: all ease .5s;
 }
 .slider__first--item-btn a:hover {
@@ -903,12 +896,6 @@ body {
   .slider__first--item-title {
     font-size: 30px;
     line-height: 36px;
-  }
-  .slider__first .slick-next {
-    right: 0;
-  }
-  .slider__first .slick-prev {
-    left: 0;
   }
 
   .about__brend {

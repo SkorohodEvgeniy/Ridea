@@ -166,7 +166,6 @@
 
 @media(max-width:767px) {
     .header {
-        &__menu {}
 
         &__list {
 
@@ -262,13 +261,6 @@
                 }
             }
 
-            .slick-next {
-                right: 0;
-            }
-
-            .slick-prev {
-                left: 0;
-            }
         }
     }
 
