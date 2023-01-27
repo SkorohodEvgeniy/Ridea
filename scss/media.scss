@@ -162,6 +162,17 @@
         padding-left: 60px;
         padding-right: 60px;
     }
+
+    .catalog {
+        &__home {
+            &--lists {
+                grid-template-columns: 1fr 1fr;
+                margin-bottom: 40px;
+            }
+
+        }
+
+    }
 }
 
 @media(max-width:767px) {
@@ -267,5 +278,26 @@
     .about__brend {
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+@media(max-width: 480px) {
+    .catalog {
+        &__home {
+            &--lists {
+                grid-template-columns: 1fr;
+            }
+
+            &--item {
+                &-img {
+                    padding: 20px;
+                }
+
+                &-title {
+                    padding: 10px 20px 31px;
+                }
+            }
+        }
+
     }
 }
