@@ -274,11 +274,9 @@ body {
 .slider {
   &__first {
 
+    background: url(/assets/img/icon/filter.svg) 50% 50% repeat, -o-linear-gradient(255.34deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.svg) 0 0 repeat;
 
-    background: -o-linear-gradient(255.34deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.svg) 0 0 repeat;
-
-
-    background: linear-gradient(194.66deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.svg) 0 0 repeat;
+    background: url(/assets/img/icon/filter.svg) 50% 50% repeat, linear-gradient(194.66deg, #0C2855 44.09%, rgba(12, 40, 85, 0.5) 84.13%), url(/assets/img/icon/pattern.svg) 0 0 repeat;
     padding-bottom: 50px;
 
     &--lists {
@@ -308,6 +306,9 @@ body {
       &-img {
         max-width: 328px;
         margin: 0 auto;
+        position: relative;
+
+
       }
 
       &-btn {

@@ -10,3 +10,8 @@ function toggleBurgerMenu() {
 }
 
 headerBurger.addEventListener("click", toggleBurgerMenu);
+
+/*----------Slider First-----------*/
+$(document).ready(function () {
+  $(".slider__first--lists").slick({});
+});
