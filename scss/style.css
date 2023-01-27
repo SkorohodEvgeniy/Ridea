@@ -988,6 +988,16 @@ body {
     grid-template-columns: 1fr 1fr;
     margin-bottom: 40px;
   }
+  .catalog__home--item {
+    margin-bottom: 20px;
+    height: 350px;
+  }
+  .catalog__home--item-img {
+    padding-top: 30px;
+  }
+  .catalog__home--item-img img {
+    max-width: 220px;
+  }
 }
 @media (max-width: 767px) {
   .header__social-link {

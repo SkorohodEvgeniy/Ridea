@@ -170,6 +170,18 @@
                 margin-bottom: 40px;
             }
 
+            &--item {
+                margin-bottom: 20px;
+                height: 350px;
+
+                &-img {
+                    padding-top: 30px;
+
+                    img {
+                        max-width: 220px;
+                    }
+                }
+            }
         }
 
     }
