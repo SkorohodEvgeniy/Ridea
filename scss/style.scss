@@ -234,23 +234,28 @@
 }
 
 /*---------Template----------------------*/
-.btn{
+.btn {
   display: inline-block;
   border-radius: 100px;
+  -webkit-transition: all ease .5s;
+  -o-transition: all ease .5s;
   transition: all ease .5s;
   padding: 10px 30px;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
   line-height: 19px;
-  &__navy{
+
+  &__navy {
     background: #0C2855;
     color: #FFFFFF;
-    &:hover{
+
+    &:hover {
       background: #00B18B;
     }
   }
 }
+
 .heading {
   &__box {
     padding: 60px 0 40px;
@@ -357,13 +362,14 @@ body {
           }
         }
       }
+
       .slick-next {
         right: 0;
-    }
+      }
 
-    .slick-prev {
+      .slick-prev {
         left: 0;
-    }
+      }
     }
 
     &--item {
@@ -461,27 +467,47 @@ body {
 }
 
 /*-----------Catalog----------------*/
-.catalog{
-  &__home{
+.catalog {
+  &__home {
     padding-bottom: 80px;
     background-color: #A5DDE2;
-    &--lists{
+
+    &--lists {
       display: grid;
       gap: 20px;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       margin-bottom: 70px;
     }
-    &--item{
+
+    &--item {
+      background: -o-linear-gradient(302.86deg, rgba(255, 255, 255, 0) 19.62%, #FFFFFF 55.38%), url(/assets/img/catalog/category-bg.png) 0 0 repeat, #fff;
       background: linear-gradient(147.14deg, rgba(255, 255, 255, 0) 19.62%, #FFFFFF 55.38%), url(/assets/img/catalog/category-bg.png) 0 0 repeat, #fff;
+      -webkit-transition: all ease .5s;
+      -o-transition: all ease .5s;
       transition: all ease .5s;
-      
-      &-img{
+
+      &:hover {
+        background: -o-linear-gradient(302.86deg, rgba(255, 255, 255, 0.5) 19.62%, #FFFFFF 55.38%), url(/assets/img/catalog/category-bg.png) 0 0 repeat, #fff;
+        background: linear-gradient(147.14deg, rgba(255, 255, 255, 0.5) 19.62%, #FFFFFF 55.38%), url(/assets/img/catalog/category-bg.png) 0 0 repeat, #fff;
+        box-shadow: 10px 55px 65px -61px rgba(255, 255, 255, 0.75);
+        -webkit-box-shadow: 10px 55px 65px -61px rgba(255, 255, 255, 0.75);
+        -moz-box-shadow: 10px 55px 65px -61px rgba(255, 255, 255, 0.75);
+      }
+
+      &-img {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         padding: 50px 10px 10px 10px;
       }
-      &-title{
+
+      &-title {
         font-weight: 400;
         font-size: 24px;
         line-height: 33px;
@@ -490,7 +516,8 @@ body {
         padding: 10px 70px 74px;
       }
     }
-    &--link{
+
+    &--link {
       text-align: center;
     }
   }
