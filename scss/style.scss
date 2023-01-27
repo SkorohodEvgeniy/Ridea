@@ -234,6 +234,23 @@
 }
 
 /*---------Template----------------------*/
+.btn{
+  display: inline-block;
+  border-radius: 100px;
+  transition: all ease .5s;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  &__navy{
+    background: #0C2855;
+    color: #FFFFFF;
+    &:hover{
+      background: #00B18B;
+    }
+  }
+}
 .heading {
   &__box {
     padding: 60px 0 40px;
@@ -446,11 +463,13 @@ body {
 /*-----------Catalog----------------*/
 .catalog{
   &__home{
+    padding-bottom: 80px;
     background-color: #A5DDE2;
     &--lists{
       display: grid;
       gap: 20px;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-bottom: 70px;
     }
     &--item{
       background: linear-gradient(147.14deg, rgba(255, 255, 255, 0) 19.62%, #FFFFFF 55.38%), url(/assets/img/catalog/category-bg.png) 0 0 repeat, #fff;
@@ -460,7 +479,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 50px 50px 10px 50px;
+        padding: 50px 10px 10px 10px;
       }
       &-title{
         font-weight: 400;
@@ -468,7 +487,11 @@ body {
         line-height: 33px;
         text-align: center;
         color: #0C2855;
+        padding: 10px 70px 74px;
       }
+    }
+    &--link{
+      text-align: center;
     }
   }
 }
