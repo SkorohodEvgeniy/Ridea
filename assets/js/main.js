@@ -38,6 +38,13 @@ $(document).ready(function () {
           rows: 2,
         },
       },
+      {
+        breakpoint: 321,
+        settings: {
+          slidesToShow: 1,
+          rows: 1,
+        },
+      },
     ],
   });
 });
