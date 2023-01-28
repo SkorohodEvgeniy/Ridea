@@ -102,6 +102,7 @@
             &--submenu{
                 position: unset;
                 background: transparent;
+                box-shadow: none;
                 ul{
                     li{
                         a{
@@ -304,9 +305,31 @@
             >.header__social {
                 display: none;
             }
-
+            >.header__lang{
+                display: none;
+            }
         }
-
+        &__lang{
+            &-mob{
+                display: inline-block;
+                ul{
+                    display: flex;
+                    margin-bottom: 50px;
+                    li{
+                        color: #fff;
+                        &:not(:last-child){
+                            margin-right: 10px;
+                        }
+                        a{
+                            text-transform: uppercase;
+                            font-size: 14px;
+                            line-height: 19px;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
         &__social {
             &-mob {
                 .header__social-dealer {

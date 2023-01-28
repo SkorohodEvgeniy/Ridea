@@ -1044,6 +1044,8 @@ body {
   .header__link--submenu {
     position: unset;
     background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .header__link--submenu ul li a {
     color: #A5DDE2;
@@ -1167,6 +1169,30 @@ body {
 @media (max-width: 640px) {
   .header__body > .header__social {
     display: none;
+  }
+  .header__body > .header__lang {
+    display: none;
+  }
+  .header__lang-mob {
+    display: inline-block;
+  }
+  .header__lang-mob ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .header__lang-mob ul li {
+    color: #fff;
+  }
+  .header__lang-mob ul li:not(:last-child) {
+    margin-right: 10px;
+  }
+  .header__lang-mob ul li a {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
   }
   .header__social-mob .header__social-dealer {
     margin-top: 30px;
