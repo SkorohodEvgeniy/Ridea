@@ -366,7 +366,7 @@ body {
 .header__list li {
   position: relative;
 }
-.header__list li .show {
+.header__list li.show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,6 +374,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header__list li a {
   color: #0C2855;
@@ -1045,14 +1048,17 @@ body {
   .header__link--submenu ul li a {
     color: #A5DDE2;
   }
-  .header__link--btn-submenu.show {
-    color: #fff;
-  }
   .header__link--btn-submenu svg {
     position: absolute;
     top: 9px;
   }
   .header__link--btn-submenu svg path {
+    stroke: #fff;
+  }
+  .header__link--btn-submenu.show {
+    color: #fff;
+  }
+  .header__link--btn-submenu.show svg path {
     stroke: #fff;
   }
   .header__social-link {

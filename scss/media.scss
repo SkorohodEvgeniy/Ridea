@@ -111,14 +111,19 @@
                 }
             }
             &--btn-submenu{
-                &.show{
-                    color: #fff;
-                }
                 svg{
                     position: absolute;
                     top: 9px;
                     path{
                         stroke: #fff;
+                    }
+                }
+                &.show{
+                    color: #fff;
+                    svg{
+                        path{
+                            stroke: #fff;
+                        }
                     }
                 }
             }
