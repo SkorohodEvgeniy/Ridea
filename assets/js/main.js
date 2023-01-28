@@ -117,24 +117,18 @@ let dealerBtn = document.querySelectorAll(".btn__popup");
 function closePopUp() {
   showClass.classList.remove("show");
 }
-function showPopUp() {
-  showClass.classList.add("show");
 
+function showPopUp() {
+  
   dealerBtn.forEach(function(userItem) {
     
-    console.log(userItem);
-    
     userItem.addEventListener("click", function(){
-      let nameTitle = this.dataset.title;
-      if(nameTitle == "Зв'язатися з нами"){
-        titlePopUp.innerHTML = nameTitle;
-      }else if(nameTitle == "Стати дилером"){
-        titlePopUp.innerHTML = nameTitle;
-      }
+      
+      titlePopUp.innerHTML = this.dataset.title;
     });
   });
-
-
+  showClass.classList.add("show");
+  
 }
 
 closeBtn.addEventListener("click", closePopUp);
