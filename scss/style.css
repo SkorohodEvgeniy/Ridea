@@ -360,6 +360,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
   color: #0C2855;
   z-index: 2;
@@ -369,8 +371,15 @@ body {
   position: relative;
 }
 .header__list li.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .header__list li a {
@@ -406,7 +415,11 @@ body {
 .header__lang ul {
   z-index: 2;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .header__lang ul li {
@@ -426,7 +439,7 @@ body {
   position: relative;
 }
 .header__link--btn-submenu::after {
-  content: "";
+  content: '';
   background: url();
 }
 .header__link--btn-submenu svg {
@@ -436,6 +449,8 @@ body {
   color: #00B18B;
 }
 .header__link--btn-submenu.show svg {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 .header__link--btn-submenu.show svg path {
@@ -447,6 +462,7 @@ body {
   top: 36px;
   left: -100px;
   background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
   min-width: 300px;
   padding: 30px 10px;
@@ -783,17 +799,36 @@ body {
 .catalog__home--lists.slick-initialized .slick-slide {
   margin: 0 10px;
 }
-.catalog__home--lists .slick-dots {
-  margin-bottom: -60px;
+.catalog__home .arrow__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
 }
-.catalog__home--lists .slick-dots li button {
+.catalog__home .arrow__btns .slick-dots {
+  position: unset;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+.catalog__home .arrow__btns .slick-dots li button {
   background: #fff;
   width: 10px;
   height: 10px;
   border-radius: 50%;
 }
-.catalog__home--lists .slick-dots li.slick-active button {
+.catalog__home .arrow__btns .slick-dots li.slick-active button {
   background-color: #0C2855;
+}
+.catalog__home .arrow__btns .slick-prevBtn {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+.catalog__home .arrow__btns .slick-nextBtn {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
 }
 .catalog__home .slick-dotted.slick-slider {
   margin-bottom: 100px;
