@@ -604,7 +604,8 @@ body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      margin-bottom: 30px;
+      margin: 0 auto 40px;
+      width: 25%;
 
       .slick {
         &-dots {
@@ -625,10 +626,12 @@ body {
               button {
                 background-color: #0C2855;
               }
+
             }
           }
 
         }
+
 
         &-prevBtn {
           -webkit-box-ordinal-group: 2;
@@ -638,8 +641,27 @@ body {
 
         &-nextBtn {
           -webkit-box-ordinal-group: 4;
-              -ms-flex-order: 3;
-                  order: 3;
+          -ms-flex-order: 3;
+          order: 3;
+        }
+      }
+
+      button {
+        background: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        -webkit-transition: all ease .5s;
+        -o-transition: all ease .5s;
+        transition: all ease .5s;
+
+        &:hover {
+          background: #00B18B;
+
+          svg {
+            fill: #fff;
+          }
         }
       }
 

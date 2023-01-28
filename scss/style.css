@@ -803,7 +803,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 30px;
+  margin: 0 auto 40px;
+  width: 25%;
 }
 .catalog__home .arrow__btns .slick-dots {
   position: unset;
@@ -829,6 +830,22 @@ body {
   -webkit-box-ordinal-group: 4;
   -ms-flex-order: 3;
   order: 3;
+}
+.catalog__home .arrow__btns button {
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+}
+.catalog__home .arrow__btns button:hover {
+  background: #00B18B;
+}
+.catalog__home .arrow__btns button:hover svg {
+  fill: #fff;
 }
 .catalog__home .slick-dotted.slick-slider {
   margin-bottom: 100px;
