@@ -106,3 +106,40 @@ $(document).ready(function () {
     ],
   });
 });
+
+/**--------------POp UP------------------------- */
+
+let showClass = document.querySelector(".popup__body");
+let closeBtn = document.querySelector(".popup__close--btn");
+let titlePopUp = document.querySelector(".popup__title");
+let dealerBtn = document.querySelectorAll(".btn__popup");
+
+function closePopUp() {
+  showClass.classList.remove("show");
+}
+function showPopUp() {
+  showClass.classList.add("show");
+
+  dealerBtn.forEach(function(userItem) {
+    
+    console.log(userItem);
+    
+    userItem.addEventListener("click", function(){
+      let nameTitle = this.dataset.title;
+      if(nameTitle == "Зв'язатися з нами"){
+        titlePopUp.innerHTML = nameTitle;
+      }else if(nameTitle == "Стати дилером"){
+        titlePopUp.innerHTML = nameTitle;
+      }
+    });
+  });
+
+
+}
+
+closeBtn.addEventListener("click", closePopUp);
+
+dealerBtn.forEach(function(userItem) {
+  
+  userItem.addEventListener("click", showPopUp);
+});
