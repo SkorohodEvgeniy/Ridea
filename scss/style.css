@@ -630,6 +630,74 @@ body {
   color: #0C2855;
 }
 
+.popup__close--btn {
+  text-align: end;
+  margin-bottom: 40px;
+}
+.popup__body {
+  width: 500px;
+  height: 500px;
+  padding: 20px 20px 20px 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  background: #fff;
+}
+.popup__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0C2855;
+  margin-bottom: 40px;
+}
+.popup__form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.popup__form form label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #0C2855;
+  margin-bottom: 5px;
+}
+.popup__form form input {
+  background-color: #f3f3f3;
+  padding: 15px 20px;
+  max-width: 400px;
+}
+.popup__form form input:not(:last-child) {
+  margin-bottom: 30px;
+}
+.popup__form form input[type="submit"] {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  background: #0C2855;
+  border-radius: 100px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+}
+.popup__form form input[type="submit"]:hover {
+  background: #00B18B;
+}
+
 /*----Footer down (Липкий Footer)---------*/
 html,
 body {
