@@ -6,10 +6,19 @@ let body = document.getElementsByTagName("body");
 function toggleBurgerMenu() {
   headerBurger.classList.toggle("active");
   headerMenu.classList.toggle("active");
-  body.classList.toggle("lock");
 }
 
 headerBurger.addEventListener("click", toggleBurgerMenu);
+
+
+/**--------------Btn menu--------------*/
+let clickBtn = document.querySelector(".header__link--btn-submenu");
+
+clickBtn.addEventListener("click", function () {
+  let headerMenu = document.querySelector(".header__link--submenu").classList.toggle("show");
+  let headerSubMenu = document.querySelector(".header__link--btn-submenu").classList.toggle("show");
+});
+
 
 /*----------Slider First-----------*/
 $(document).ready(function () {
@@ -26,7 +35,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".catalog__home--lists").slick({
     infinite: true,
-    autoplay:true,
+  autoplay:true,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 2,

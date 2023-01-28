@@ -3,7 +3,7 @@
 
         &__list {
 
-            li {
+           > li {
                 margin-left: 30px;
 
                 &:first-child {
@@ -28,7 +28,15 @@
                 margin-left: 40px;
             }
         }
-
+        &__link{
+            &--btn-submenu{
+                display: flex;
+                align-items: center;
+            }
+            &--submenu{
+                position: absolute;
+            }
+        }
     }
 }
 
