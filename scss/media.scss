@@ -208,6 +208,18 @@
 }
 
 @media(max-width:768px) {
+    .header {
+        &__social {
+            &-link {
+                margin-right: 20px;
+            }
+        }
+
+        &__lang {
+            margin-left: 20px;
+        }
+    }
+
     .slider {
         &__first {
             &--item {
