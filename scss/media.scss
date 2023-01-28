@@ -244,14 +244,11 @@
 
             &--item {
                 margin-bottom: 20px;
-                height: 350px;
+                min-height: 250px;
 
                 &-img {
                     padding-top: 30px;
 
-                    img {
-                        max-width: 220px;
-                    }
                 }
             }
         }
@@ -412,12 +409,9 @@
 
             &--item {
                 &-img {
-                    padding: 20px;
+                    padding: 20px 5px;
                 }
 
-                &-title {
-                    padding: 10px 20px 31px;
-                }
             }
         }
 

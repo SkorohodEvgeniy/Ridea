@@ -604,8 +604,14 @@ body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
       margin: 0 auto 40px;
-      width: 25%;
+      width: 250px;
 
       .slick {
         &-dots {
@@ -647,7 +653,7 @@ body {
       }
 
       button {
-        background: #fff;
+        background: rgba(255, 255, 255, 0.505);
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -656,11 +662,15 @@ body {
         -o-transition: all ease .5s;
         transition: all ease .5s;
 
+        svg {
+          fill: #0c285542;
+        }
+
         &:hover {
-          background: #00B18B;
+          background: #fff;
 
           svg {
-            fill: #fff;
+            fill: #0c2855;
           }
         }
       }
@@ -668,7 +678,7 @@ body {
     }
 
     .slick-dotted.slick-slider {
-      margin-bottom: 100px;
+      margin-bottom: 30px;
 
     }
 
@@ -678,7 +688,7 @@ body {
       -webkit-transition: all ease .5s;
       -o-transition: all ease .5s;
       transition: all ease .5s;
-      height: 430px;
+
       overflow-y: hidden;
 
       &:hover {
@@ -687,8 +697,7 @@ body {
         box-shadow: 10px 55px 65px -61px rgba(255, 255, 255, 0.75);
         -webkit-box-shadow: 10px 55px 65px -61px rgba(255, 255, 255, 0.75);
         -moz-box-shadow: 10px 55px 65px -61px rgba(255, 255, 255, 0.75);
-        min-height: 430px;
-        height: auto;
+
       }
 
       &-img {
@@ -790,6 +799,82 @@ body {
 
     &--btn {
       text-align: center;
+    }
+  }
+
+  &__arrow--btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 auto 40px;
+    width: 250px;
+
+    .slick {
+      &-dots {
+        position: unset;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+
+        li {
+          button {
+            background: #A5DDE2;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+          }
+
+          &.slick-active {
+            button {
+              background-color: #0C2855;
+            }
+
+          }
+        }
+
+      }
+
+
+      &-prevBtn {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+      }
+
+      &-nextBtn {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+      }
+    }
+
+    button {
+      background: #a5dde22f;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      -webkit-transition: all ease .5s;
+      -o-transition: all ease .5s;
+      transition: all ease .5s;
+
+      svg {
+        fill: #0c285542;
+      }
+
+      &:hover {
+        background: #A5DDE2;
+
+        svg {
+          fill: #0c2855;
+        }
+      }
     }
   }
 }
