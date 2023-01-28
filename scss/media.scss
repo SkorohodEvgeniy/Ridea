@@ -98,7 +98,29 @@
                 }
             }
         }
-
+        &__link{
+            &--submenu{
+                position: unset;
+                background: transparent;
+                ul{
+                    li{
+                        a{
+                            color: #A5DDE2;
+                        }
+                    }
+                }
+            }
+            &--btn-submenu{
+                &.show{
+                    color: #fff;
+                }
+                svg{
+                    path{
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
         &__social {
 
             &-link {

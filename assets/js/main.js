@@ -17,6 +17,8 @@ let clickBtn = document.querySelector(".header__link--btn-submenu");
 clickBtn.addEventListener("click", function () {
   let headerMenu = document.querySelector(".header__link--submenu").classList.toggle("show");
   let headerSubMenu = document.querySelector(".header__link--btn-submenu").classList.toggle("show");
+  
+  this.parentNode.classList.add("show");
 });
 
 

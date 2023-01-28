@@ -61,6 +61,10 @@
     position: relative;
     li{
       position: relative;
+      .show{
+        display: flex;
+        flex-direction: column;
+      }
       a {
         color: #0C2855;
         text-transform: uppercase;

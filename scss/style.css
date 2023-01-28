@@ -366,6 +366,15 @@ body {
 .header__list li {
   position: relative;
 }
+.header__list li .show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .header__list li a {
   color: #0C2855;
   text-transform: uppercase;
@@ -1028,6 +1037,19 @@ body {
   }
   .header__list li:not(:last-child) {
     margin-bottom: 40px;
+  }
+  .header__link--submenu {
+    position: unset;
+    background: transparent;
+  }
+  .header__link--submenu ul li a {
+    color: #A5DDE2;
+  }
+  .header__link--btn-submenu.show {
+    color: #fff;
+  }
+  .header__link--btn-submenu svg path {
+    stroke: #fff;
   }
   .header__social-link {
     margin-right: 30px;
