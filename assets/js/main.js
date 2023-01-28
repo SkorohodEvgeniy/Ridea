@@ -85,6 +85,20 @@ $(document).ready(function () {
       {
         breakpoint: 1025,
         settings: {
+          slidesToShow: 3,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 476,
+        settings: {
           slidesToShow: 1,
           centerMode: true,
         },
