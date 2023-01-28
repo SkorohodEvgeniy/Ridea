@@ -1048,6 +1048,10 @@ body {
   .header__link--btn-submenu.show {
     color: #fff;
   }
+  .header__link--btn-submenu svg {
+    position: absolute;
+    top: 9px;
+  }
   .header__link--btn-submenu svg path {
     stroke: #fff;
   }
