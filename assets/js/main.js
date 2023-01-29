@@ -113,15 +113,18 @@ let showClass = document.querySelector(".popup__body");
 let closeBtn = document.querySelector(".popup__close--btn");
 let titlePopUp = document.querySelector(".popup__title");
 let openPopUp = document.querySelectorAll(".btn__popup");
+let lockBody = document.querySelector("body");
 
 function closePopUp() {
   showClass.classList.remove("show");
+  lockBody.classList.remove("lock");
 }
 closeBtn.addEventListener("click", closePopUp);
 
 function showPopUp() {
   titlePopUp.innerHTML = this.dataset.title;
   showClass.classList.add("show");
+  lockBody.classList.add("lock");
 }
 
 openPopUp.forEach(function (userItem) {
