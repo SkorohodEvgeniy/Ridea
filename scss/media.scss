@@ -92,6 +92,11 @@
                 display: none;
             }
         }
+        &__lang {
+            &-mob {
+                display: none;
+            }
+        }
     }
 }
 
@@ -266,6 +271,22 @@
         }
 
     }
+    body {
+        &.blogs {
+          .blog {
+      
+            &__body {
+              &--lists {
+                grid-template-columns: 1fr 1fr ;
+                grid-template-rows: auto;
+                gap: 40px;
+              }
+      
+            }
+      
+          }
+        }
+      }
 }
 
 @media(max-width:767px) {
@@ -326,7 +347,7 @@
     }
 }
 
-@media(max-width:667px) {
+@media(max-width:668px) {
     .header {
         &__body {
             >.header__social {
@@ -410,6 +431,21 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+    body {
+        &.blogs {
+          .blog {
+      
+            &__body {
+              &--lists {
+                grid-template-columns: 1fr ;
+                
+              }
+      
+            }
+      
+          }
+        }
+      }
 }
 
 @media(max-width:570px){
