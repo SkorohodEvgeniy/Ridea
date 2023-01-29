@@ -69,6 +69,12 @@ body {
   padding: 0 15px;
 }
 
+._container {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
