@@ -489,6 +489,54 @@
   }
 }
 
+.breadcrumbs {
+  padding: 30px 15px;
+
+  background: url(/assets/img/icon/pattern-small.svg) 0 0 no-repeat;
+
+  background-size: cover;
+
+  &__lists {
+    ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 20px;
+
+      li {
+        color: #919191;
+
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+
+        a {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          color: #919191;
+
+          &.active {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
+
+
 /*----Footer down (Липкий Footer)---------*/
 html,
 body {
@@ -836,6 +884,28 @@ body {
 }
 
 /*--------------Blog------------------*/
+body {
+  &.blogs {
+    .blog {
+      padding: 70px 0 80px;
+
+      &__body {
+        &--lists {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: auto;
+          gap: 40px;
+        }
+
+        &--item {
+          padding: 0;
+        }
+      }
+
+    }
+  }
+}
+
 .blog {
   padding-bottom: 80px;
 
@@ -901,6 +971,7 @@ body {
       text-align: center;
     }
   }
+
 
   &__arrow--btns {
     display: -webkit-box;

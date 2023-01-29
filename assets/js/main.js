@@ -68,7 +68,7 @@ $(document).ready(function () {
 
 /*----------Slider Blog Home-----------*/
 $(document).ready(function () {
-  $(".blog__body--lists").slick({
+  $(".blog__home--slider").slick({
     autoplay: true,
     infinite: true,
     speed: 300,
