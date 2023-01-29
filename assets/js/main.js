@@ -112,28 +112,18 @@ $(document).ready(function () {
 let showClass = document.querySelector(".popup__body");
 let closeBtn = document.querySelector(".popup__close--btn");
 let titlePopUp = document.querySelector(".popup__title");
-let dealerBtn = document.querySelectorAll(".btn__popup");
+let openPopUp = document.querySelectorAll(".btn__popup");
 
 function closePopUp() {
   showClass.classList.remove("show");
 }
-
-function showPopUp() {
-  
-  dealerBtn.forEach(function(userItem) {
-    
-    userItem.addEventListener("click", function(){
-      
-      titlePopUp.innerHTML = this.dataset.title;
-    });
-  });
-  showClass.classList.add("show");
-  
-}
-
 closeBtn.addEventListener("click", closePopUp);
 
-dealerBtn.forEach(function(userItem) {
-  
+function showPopUp() {
+  titlePopUp.innerHTML = this.dataset.title;
+  showClass.classList.add("show");
+}
+
+openPopUp.forEach(function (userItem) {
   userItem.addEventListener("click", showPopUp);
 });
