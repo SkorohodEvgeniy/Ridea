@@ -933,24 +933,26 @@ body {
       }
 
       &-date {
-        a{
+        a {
           font-weight: 400;
           font-size: 12px;
           line-height: 16px;
           color: #919191;
 
         }
+
         margin-bottom: 10px;
       }
 
       &-title {
-        a{
+        a {
           font-weight: 700;
           font-size: 1rem;
           line-height: 22px;
           color: #0C2855;
 
         }
+
         margin-bottom: 10px;
       }
 
@@ -1053,100 +1055,141 @@ body {
       }
     }
   }
-  &__pagination{
+
+  &__pagination {
     margin: 0 auto;
-    &--list{
+
+    &--list {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
     }
-    &--item{
-      a{
+
+    &--item {
+      a {
         font-weight: 400;
         text-align: center;
         color: #919191;
 
       }
+
       &:not(:first-child),
-      &:not(:last-child){
-        
+      &:not(:last-child) {
+
         margin-right: 10px;
       }
 
-      &:first-child{
+      &:first-child {
         margin-right: 50px;
       }
-      &:last-child{
+
+      &:last-child {
         margin-left: 50px;
 
       }
+
       &:first-child,
-      &:last-child{
+      &:last-child {
         width: 40px;
         height: 40px;
         border-radius: 50%;
         background-color: #A5DDE2;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         opacity: .7;
       }
-      
+
     }
   }
 }
 
+/*------------------Page Contacts-------------------------*/
+.contacts {}
+
 /*-------------Home Exchange-------------------*/
-.exchange{
-  
-/* Accordion*/
-.accordion {
-  padding: 50px;
-  &__block {
-    margin-bottom: 20px;
+.exchange {
+
+  /* Accordion*/
+  .accordion {
+    padding: 50px;
+
+    &__block {
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      padding-top: 10px;
+      display: none;
+    }
+
+    &__title {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+    }
+
+    /* Accordion arrow*/
+    &__title::before,
+    &__title::after {
+      content: "";
+      width: 10px;
+      height: 1px;
+      background-color: #000;
+      position: absolute;
+      top: 8px;
+      -webkit-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+
+    &__title::before {
+      -webkit-transform: rotate(40deg);
+          -ms-transform: rotate(40deg);
+              transform: rotate(40deg);
+      left: 0;
+    }
+
+    &__title::after {
+      -webkit-transform: rotate(-40deg);
+          -ms-transform: rotate(-40deg);
+              transform: rotate(-40deg);
+      left: 8px;
+    }
+
+    &__title.active::before,
+    &__title.active::after {
+      background-color: crimson;
+    }
+
+    &__title.active::before {
+      -webkit-transform: rotate(-40deg);
+          -ms-transform: rotate(-40deg);
+              transform: rotate(-40deg);
+    }
+
+    &__title.active::after {
+      -webkit-transform: rotate(40deg);
+          -ms-transform: rotate(40deg);
+              transform: rotate(40deg);
+    }
   }
-  &__text {
-    padding-top: 10px;
-    display: none;
-  }
-  &__title {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
-  }
-  /* Accordion arrow*/
-  &__title::before,
-  &__title::after {
-    content: "";
-    width: 10px;
-    height: 1px;
-    background-color: #000;
-    position: absolute;
-    top: 8px;
-    transition: all 0.3s ease 0s;
-  }
-  &__title::before {
-    transform: rotate(40deg);
-    left: 0;
-  }
-  &__title::after {
-    transform: rotate(-40deg);
-    left: 8px;
-  }
-  &__title.active::before,
-  &__title.active::after {
-    background-color: crimson;
-  }
-  &__title.active::before {
-    transform: rotate(-40deg);
-  }
-  &__title.active::after {
-    transform: rotate(40deg);
-  }
-}
-/* Accordion END*/
+
+  /* Accordion END*/
 }
 
 /*-------------Footer---------------------*/
