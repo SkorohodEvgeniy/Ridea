@@ -107,7 +107,19 @@ $(document).ready(function () {
   });
 });
 
-/**--------------POp UP------------------------- */
+/*--------------Slider Catalog------------------------ */
+$(document).ready(function () {
+  $(".catalog__category").slick({
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    dots: false,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+  });
+});
+
+/**--------------Pop UP------------------------- */
 
 let showClass = document.querySelector(".popup__body");
 let closeBtn = document.querySelector(".popup__close--btn");

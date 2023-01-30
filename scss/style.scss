@@ -1054,6 +1054,49 @@ body {
       text-align: center;
     }
   }
+
+  &__category {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 22px;
+
+    &--item {
+      height: 129px;
+      background: #FFFFFF;
+      opacity: 0.75;
+      -webkit-transition: all ease .5s;
+      -o-transition: all ease .5s;
+      transition: all ease .5s;
+
+      a {
+        padding: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: #0C2855;
+
+        img {
+          width: 70px;
+          height: 70px;
+        }
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &.slick-initialized .slick-slide {
+      margin: 0 11px;
+    }
+  }
 }
 
 /*--------------Blog------------------*/
