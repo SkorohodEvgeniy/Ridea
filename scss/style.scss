@@ -720,7 +720,7 @@ body {
     -ms-flex: 0 1 50%;
     flex: 0 1 50%;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 16px;
     color: #0C2855;
     line-height: 22px;
 
@@ -886,7 +886,7 @@ body {
 body {
   &.blogs {
     .blog {
-      padding: 70px 0 80px;
+      padding-bottom: 80px;
 
       &__body {
         &--lists {
@@ -894,6 +894,7 @@ body {
           grid-template-columns: 1fr 1fr 1fr;
           grid-template-rows: auto;
           gap: 40px;
+          padding-top: 70px;
         }
 
         &--item {
@@ -906,11 +907,10 @@ body {
 }
 
 .blog {
-  padding: 80px;
+  padding-bottom: 80px;
 
   &__body {
     &--lists {
-      padding-top: 70px;
       margin-bottom: 40px;
 
     }
@@ -946,7 +946,7 @@ body {
       &-title {
         a {
           font-weight: 700;
-          font-size: 1rem;
+          font-size: 16px;
           line-height: 22px;
           color: #0C2855;
 
@@ -957,7 +957,7 @@ body {
 
       &-exerpt {
         font-weight: 400;
-        font-size: 1rem;
+        font-size: 16px;
         line-height: 22px;
         color: #919191;
         margin-bottom: 15px;
