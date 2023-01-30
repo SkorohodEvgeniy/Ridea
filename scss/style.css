@@ -807,6 +807,7 @@ body {
 
 .article {
   padding-bottom: 80px;
+  margin: 0 -15px;
 }
 .article__content--data {
   margin-bottom: 20px;
