@@ -883,6 +883,31 @@ hr {
   border: 1px solid #000;
 }
 
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.d-flex .arrow-pag {
+  padding-top: 70px;
+}
+.d-flex .arrow-pag a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #A5DDE2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  opacity: .7;
+}
+
 /*----Footer down (Липкий Footer)---------*/
 html,
 body {
