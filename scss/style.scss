@@ -537,7 +537,7 @@
 }
 
 /*-----------------Page All Style-----------------*/
-.block{
+.block {
   &__grey {
     background: #F3F3F3;
     padding: 50px;
@@ -549,19 +549,21 @@
     align-items: center;
     line-height: 122%;
     margin-bottom: 20px;
-  
+
     img {
       margin-right: 20px;
     }
   }
-  &__citate{
+
+  &__citate {
     background: #0C2855;
     padding: 40px;
     position: relative;
     color: #fff;
     margin: 40px 0;
+
     &::before,
-    &::after{
+    &::after {
       content: '';
       position: absolute;
       width: 38px;
@@ -569,10 +571,12 @@
       background: url(/assets/img/icon/quotes.svg) no-repeat 0 0;
       background-size: cover;
     }
-    &::before{
+
+    &::before {
       top: -10px;
     }
-    &::after{
+
+    &::after {
       right: 40px;
       bottom: -10px;
     }
@@ -580,44 +584,60 @@
 }
 
 .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 2.5rem;
-  .sm-6{
+
+  .sm-6 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 calc((100% / 2) - 2rem);
     flex: 1 1 calc((100% / 2) - 2rem);
   }
 }
-.article{
+
+.article {
   padding-bottom: 80px;
   margin: 0 -15px;
-  &__content{
-    &--data{
+  position: relative;
+
+  &__content {
+    &--data {
       margin-bottom: 20px;
-      a{
+
+      a {
         color: #939393;
       }
     }
   }
-  ul{
-    li{
+
+  ul {
+    li {
       list-style: disc;
       margin-left: 45px;
     }
   }
-  .breadcrumbs{
+
+  .breadcrumbs {
     background: none;
     padding: 10px 20px;
     background: #f3f3f3;
     margin-top: 50px;
-    ul{
+
+    ul {
       margin-bottom: 0;
+      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      li{
+
+      li {
         margin-left: 0;
         list-style: none;
         margin-bottom: 0;
-        a{
-          &.active{
+
+        a {
+          &.active {
             color: #0C2855;
           }
 
@@ -627,24 +647,30 @@
     }
   }
 }
+
 .p-30 {
   padding: 30px;
 }
-.mb-30{
+
+.mb-30 {
   margin-bottom: 30px;
 }
+
 p,
-ul li{
+ul li {
   margin-bottom: 15px;
   line-height: 137%;
 }
+
 .color__navy {
   color: #0C2855;
 }
-.text-start{
+
+.text-start {
   text-align: start;
 }
-hr{
+
+hr {
   margin: 20px 0 15px;
   border: 1px solid #000;
 }
@@ -1237,14 +1263,22 @@ body {
 
 /*-------------Home Exchange-------------------*/
 .exchange {
-padding: 70px 0 80px;
-.block__grey{
-  flex-direction: column;
-  align-items: flex-start;
-  img{
-    margin-bottom: 20px;
+  padding: 70px 0 80px;
+
+  .block__grey {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+
+    img {
+      margin-bottom: 20px;
+    }
   }
-}
+
   /* Accordion*/
   .accordion {
 
