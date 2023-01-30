@@ -826,6 +826,8 @@ body {
 }
 .article .breadcrumbs ul {
   margin-bottom: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .article .breadcrumbs ul li {
   margin-left: 0;
