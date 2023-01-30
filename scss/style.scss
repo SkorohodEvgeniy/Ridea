@@ -13,7 +13,7 @@
   left: 0;
   z-index: 50;
   padding: 0 15px;
-
+  border-bottom: 1px solid #0C2855;
   &:before {
     content: "";
     position: absolute;
@@ -536,20 +536,45 @@
 }
 
 /*-----------------Page All Style-----------------*/
-.block__grey {
-  background: #F3F3F3;
-  padding: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  line-height: 122%;
-  margin-bottom: 20px;
-
-  img {
-    margin-right: 20px;
+.block{
+  &__grey {
+    background: #F3F3F3;
+    padding: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 122%;
+    margin-bottom: 20px;
+  
+    img {
+      margin-right: 20px;
+    }
+  }
+  &__citate{
+    background: #0C2855;
+    padding: 40px;
+    position: relative;
+    color: #fff;
+    margin: 40px 0;
+    &::before,
+    &::after{
+      content: '';
+      position: absolute;
+      width: 38px;
+      height: 23px;
+      background: url(/assets/img/icon/quotes.svg) no-repeat 0 0;
+      background-size: cover;
+    }
+    &::before{
+      top: -10px;
+    }
+    &::after{
+      right: 40px;
+      bottom: -10px;
+    }
   }
 }
 
@@ -561,19 +586,64 @@
     flex: 1 1 calc((100% / 2) - 2rem);
   }
 }
+.article{
+  padding-bottom: 80px;
+  &__content{
+    &--data{
+      margin-bottom: 20px;
+      a{
+        color: #939393;
+      }
+    }
+  }
+  ul{
+    li{
+      list-style: disc;
+      margin-left: 45px;
+    }
+  }
+  .breadcrumbs{
+    background: none;
+    padding: 10px 20px;
+    background: #f3f3f3;
+    margin-top: 50px;
+    ul{
+      margin-bottom: 0;
+      li{
+        margin-left: 0;
+        list-style: none;
+        margin-bottom: 0;
+        a{
+          &.active{
+            color: #0C2855;
+          }
 
+        }
+
+      }
+    }
+  }
+}
 .p-30 {
   padding: 30px;
 }
 .mb-30{
   margin-bottom: 30px;
 }
-p{
-  margin-bottom: 20px;
+p,
+ul li{
+  margin-bottom: 15px;
   line-height: 137%;
 }
 .color__navy {
   color: #0C2855;
+}
+.text-start{
+  text-align: start;
+}
+hr{
+  margin: 20px 0 15px;
+  border: 1px solid #000;
 }
 
 /*----Footer down (Липкий Footer)---------*/
