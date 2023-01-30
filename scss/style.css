@@ -1370,16 +1370,16 @@ body.blogs .blog__body--item {
 }
 
 /*-------------Page Delivery-----------------*/
-.delivery__body {
+.page__body {
   padding: 70px 0 80px;
 }
-.delivery__body p {
+.page__body p {
   line-height: 22px;
 }
-.delivery__body p:not(:last-child) {
+.page__body p:not(:last-child) {
   margin-bottom: 40px;
 }
-.delivery__body p:last-child {
+.page__body p:last-child {
   color: #0C2855;
 }
 
