@@ -600,8 +600,11 @@
 
 .article {
   padding-bottom: 80px;
-  margin: 0 -15px;
   position: relative;
+
+  ._container__small {
+    padding: 0;
+  }
 
   &__content {
     &--data {

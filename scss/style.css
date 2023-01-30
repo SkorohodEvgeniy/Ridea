@@ -821,8 +821,10 @@ body {
 
 .article {
   padding-bottom: 80px;
-  margin: 0 -15px;
   position: relative;
+}
+.article ._container__small {
+  padding: 0;
 }
 .article__content--data {
   margin-bottom: 20px;
