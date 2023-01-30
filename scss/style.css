@@ -61,6 +61,7 @@ body {
   font-style: normal;
   font-size: 18px;
   background-color: #fff;
+  color: #919191;
 }
 
 ._container__big {
@@ -758,6 +759,7 @@ body {
   color: #FFFFFF;
 }
 
+/*-----------------Page All Style-----------------*/
 /*----Footer down (Липкий Footer)---------*/
 html,
 body {
@@ -1021,10 +1023,13 @@ body {
   object-fit: cover;
 }
 .catalog__home--item-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.catalog__home--item-title a {
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
-  text-align: center;
   color: #0C2855;
   padding: 10px;
 }
@@ -1204,87 +1209,6 @@ body.blogs .blog__body--item {
   opacity: .7;
 }
 
-/*------------------Page Contacts-------------------------*/
-.contacts__columns {
-  padding: 70px 0 80px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.contacts__column--title {
-  margin-bottom: 50px;
-}
-.contacts__column--item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
-.contacts__column--img {
-  margin-right: 20px;
-}
-.contacts__column--contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-.contacts__column--contact-title {
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.contacts__column--contact-text {
-  color: #0C2855;
-}
-.contacts__column--contact-text:not(:last-child) {
-  margin-bottom: 8px;
-}
-.contacts__column--form {
-  background: #f3f3f3;
-  padding: 50px;
-}
-.contacts__column--form .form__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 27px;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  color: #0C2855;
-}
-.contacts__column--form .form__fields {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-.contacts__column--form .form__fields--box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-bottom: 30px;
-}
-.contacts__column--form .form__fields--box label {
-  margin-bottom: 5px;
-}
-.contacts__column--form .form__fields--box input {
-  padding: 15px 20px;
-  font-size: 14px;
-  line-height: 19px;
-  width: 100%;
-}
-.contacts__column--form .form__fields--box input:focus {
-  border: 1px solid #0C2855;
-  color: #0C2855;
-}
-
 /*-------------Home Exchange-------------------*/
 .exchange {
   /* Accordion*/
@@ -1343,6 +1267,89 @@ body.blogs .blog__body--item {
   -webkit-transform: rotate(40deg);
   -ms-transform: rotate(40deg);
   transform: rotate(40deg);
+}
+
+/*------------------Page Contacts-------------------------*/
+.contacts__columns {
+  padding: 70px 0 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contacts__column--title {
+  margin-bottom: 50px;
+  color: #0C2855;
+}
+.contacts__column--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.contacts__column--img {
+  margin-right: 20px;
+}
+.contacts__column--contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.contacts__column--contact-title {
+  font-weight: 700;
+  color: #0C2855;
+  margin-bottom: 10px;
+}
+.contacts__column--contact-text {
+  color: #0C2855;
+}
+.contacts__column--contact-text:not(:last-child) {
+  margin-bottom: 8px;
+}
+.contacts__column--form {
+  background: #f3f3f3;
+  padding: 50px;
+}
+.contacts__column--form .form__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #0C2855;
+}
+.contacts__column--form .form__fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.contacts__column--form .form__fields--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.contacts__column--form .form__fields--box label {
+  margin-bottom: 5px;
+}
+.contacts__column--form .form__fields--box input {
+  padding: 15px 20px;
+  font-size: 14px;
+  line-height: 19px;
+  width: 100%;
+}
+.contacts__column--form .form__fields--box input:focus {
+  border: 1px solid #0C2855;
+  color: #0C2855;
 }
 
 /*-------------Footer---------------------*/
