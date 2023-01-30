@@ -55,7 +55,7 @@ h6 {
 html,
 body {
   height: 100%;
-  line-height: 122%;
+  line-height: 137%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -780,6 +780,15 @@ body {
   padding: 30px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 137%;
+}
+
 .color__navy {
   color: #0C2855;
 }
@@ -1228,32 +1237,45 @@ body.blogs .blog__body--item {
 
 /*-------------Home Exchange-------------------*/
 .exchange {
+  padding: 70px 0 80px;
   /* Accordion*/
   /* Accordion END*/
 }
+.exchange .block__grey {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.exchange .block__grey img {
+  margin-bottom: 20px;
+}
 .exchange .accordion {
-  padding: 50px;
   /* Accordion arrow*/
 }
 .exchange .accordion__block {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .exchange .accordion__text {
-  padding-top: 10px;
+  padding-top: 15px;
   display: none;
+  padding-left: 30px;
 }
 .exchange .accordion__title {
-  text-transform: uppercase;
-  letter-spacing: 2px;
   position: relative;
   padding-left: 30px;
   cursor: pointer;
+  font-weight: 700;
+  color: #0C2855;
 }
 .exchange .accordion__title::before, .exchange .accordion__title::after {
   content: "";
   width: 10px;
   height: 1px;
-  background-color: #000;
+  background-color: #0c2855;
   position: absolute;
   top: 8px;
   -webkit-transition: all 0.3s ease 0s;
@@ -1270,7 +1292,7 @@ body.blogs .blog__body--item {
   left: 8px;
 }
 .exchange .accordion__title.active::before, .exchange .accordion__title.active::after {
-  background-color: crimson;
+  background-color: #0C2855;
 }
 .exchange .accordion__title.active::before {
   -webkit-transform: rotate(-40deg);
@@ -1641,6 +1663,18 @@ body.blogs .blog__body--item {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+
+  .exchange .columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+
+  .block__grey {
+    padding: 40px;
   }
 }
 @media (max-width: 767px) {

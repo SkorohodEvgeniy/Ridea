@@ -565,7 +565,13 @@
 .p-30 {
   padding: 30px;
 }
-
+.mb-30{
+  margin-bottom: 30px;
+}
+p{
+  margin-bottom: 20px;
+  line-height: 137%;
+}
 .color__navy {
   color: #0C2855;
 }
@@ -1158,26 +1164,33 @@ body {
 
 /*-------------Home Exchange-------------------*/
 .exchange {
-
+padding: 70px 0 80px;
+.block__grey{
+  flex-direction: column;
+  align-items: flex-start;
+  img{
+    margin-bottom: 20px;
+  }
+}
   /* Accordion*/
   .accordion {
-    padding: 50px;
 
     &__block {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
 
     &__text {
-      padding-top: 10px;
+      padding-top: 15px;
       display: none;
+      padding-left: 30px;
     }
 
     &__title {
-      text-transform: uppercase;
-      letter-spacing: 2px;
       position: relative;
       padding-left: 30px;
       cursor: pointer;
+      font-weight: 700;
+      color: #0C2855;
     }
 
     /* Accordion arrow*/
@@ -1186,7 +1199,7 @@ body {
       content: "";
       width: 10px;
       height: 1px;
-      background-color: #000;
+      background-color: #0c2855;
       position: absolute;
       top: 8px;
       -webkit-transition: all 0.3s ease 0s;
@@ -1210,7 +1223,7 @@ body {
 
     &__title.active::before,
     &__title.active::after {
-      background-color: crimson;
+      background-color: #0C2855;
     }
 
     &__title.active::before {

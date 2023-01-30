@@ -310,7 +310,16 @@
         }
 
     }
-    
+
+    .exchange{
+        .columns{
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+    .block__grey{
+        padding: 40px;
+    }
 }
 
 @media(max-width:767px) {
