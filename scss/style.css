@@ -55,7 +55,7 @@ h6 {
 html,
 body {
   height: 100%;
-  line-height: 1;
+  line-height: 122%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1373,6 +1373,9 @@ body.blogs .blog__body--item {
 .delivery__body {
   padding: 70px 0 80px;
 }
+.delivery__body p {
+  line-height: 22px;
+}
 .delivery__body p:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -1663,7 +1666,6 @@ body.blogs .blog__body--item {
     justify-content: center;
   }
   .footer__item:not(:last-child) {
-    margin-left: 30px;
     gap: 0;
     margin-bottom: 40px;
   }
