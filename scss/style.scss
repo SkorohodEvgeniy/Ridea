@@ -545,7 +545,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  line-height: 28px;
+  line-height: 122%;
   margin-bottom: 20px;
 
   img {
@@ -553,6 +553,20 @@
   }
 }
 
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.color__navy {
+  color: #0C2855;
+}
 
 /*----Footer down (Липкий Footer)---------*/
 html,
@@ -1324,15 +1338,12 @@ body {
     padding: 70px 0 80px;
 
     p {
-      line-height: 22px;
+      line-height: 122%;
 
       &:not(:last-child) {
         margin-bottom: 40px;
       }
 
-      &:last-child {
-        color: #0C2855;
-      }
     }
   }
 }

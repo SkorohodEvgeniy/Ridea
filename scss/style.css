@@ -769,11 +769,25 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  line-height: 28px;
+  line-height: 122%;
   margin-bottom: 20px;
 }
 .block__grey img {
   margin-right: 20px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.color__navy {
+  color: #0C2855;
 }
 
 /*----Footer down (Липкий Footer)---------*/
@@ -1374,13 +1388,10 @@ body.blogs .blog__body--item {
   padding: 70px 0 80px;
 }
 .page__body p {
-  line-height: 22px;
+  line-height: 122%;
 }
 .page__body p:not(:last-child) {
   margin-bottom: 40px;
-}
-.page__body p:last-child {
-  color: #0C2855;
 }
 
 /*-------------Footer---------------------*/
