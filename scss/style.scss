@@ -536,7 +536,22 @@
 }
 
 /*-----------------Page All Style-----------------*/
-.block__grey {}
+.block__grey {
+  background: #F3F3F3;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 28px;
+  margin-bottom: 20px;
+
+  img {
+    margin-right: 20px;
+  }
+}
 
 
 /*----Footer down (Липкий Footer)---------*/
@@ -838,8 +853,8 @@ body {
       -webkit-transition: all ease .5s;
       -o-transition: all ease .5s;
       transition: all ease .5s;
-
       overflow-y: hidden;
+      max-height: 500px;
 
       &:hover {
         background: -o-linear-gradient(302.86deg, rgba(255, 255, 255, 0.5) 19.62%, #FFFFFF 55.38%), url(/assets/img/catalog/category-bg.png) 0 0 repeat, #fff;
@@ -1303,8 +1318,23 @@ body {
   }
 }
 
+/*-------------Page Delivery-----------------*/
+.delivery {
+  &__body {
+    padding: 70px 0 80px;
 
+    p {
 
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+
+      &:last-child {
+        color: #0C2855;
+      }
+    }
+  }
+}
 
 
 /*-------------Footer---------------------*/

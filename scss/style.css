@@ -760,6 +760,22 @@ body {
 }
 
 /*-----------------Page All Style-----------------*/
+.block__grey {
+  background: #F3F3F3;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+.block__grey img {
+  margin-right: 20px;
+}
+
 /*----Footer down (Липкий Footer)---------*/
 html,
 body {
@@ -997,6 +1013,7 @@ body {
   -o-transition: all ease .5s;
   transition: all ease .5s;
   overflow-y: hidden;
+  max-height: 500px;
 }
 .catalog__home--item:hover {
   background: -o-linear-gradient(302.86deg, rgba(255, 255, 255, 0.5) 19.62%, #FFFFFF 55.38%), url(/assets/img/catalog/category-bg.png) 0 0 repeat, #fff;
@@ -1352,6 +1369,17 @@ body.blogs .blog__body--item {
   color: #0C2855;
 }
 
+/*-------------Page Delivery-----------------*/
+.delivery__body {
+  padding: 70px 0 80px;
+}
+.delivery__body p:not(:last-child) {
+  margin-bottom: 40px;
+}
+.delivery__body p:last-child {
+  color: #0C2855;
+}
+
 /*-------------Footer---------------------*/
 .footer {
   padding: 50px 0;
@@ -1547,6 +1575,7 @@ body.blogs .blog__body--item {
   .catalog__home--item-title {
     font-size: 1rem;
     line-height: 22px;
+    padding: 0;
   }
 
   .footer__item--form-fields {
@@ -1611,7 +1640,11 @@ body.blogs .blog__body--item {
     grid-template-columns: 1fr;
   }
   .contacts__column--lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 }
@@ -1683,6 +1716,19 @@ body.blogs .blog__body--item {
     width: 100%;
     display: block;
   }
+
+  .delivery__body .block__grey {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .delivery__body .block__grey img {
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 640px) {
   .header__burger {
@@ -1708,7 +1754,12 @@ body.blogs .blog__body--item {
     grid-template-columns: 1fr;
   }
   .contacts__column--lists {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 }

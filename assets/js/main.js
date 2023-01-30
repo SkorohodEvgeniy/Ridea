@@ -131,7 +131,6 @@ openPopUp.forEach(function (userItem) {
   userItem.addEventListener("click", showPopUp);
 });
 
-
 /*------------ Accordion---------------*/
 $(document).ready(function () {
   $(".accordion__title").click(function (event) {
