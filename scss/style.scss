@@ -491,7 +491,6 @@
 
 .breadcrumbs {
   padding: 30px 15px;
-
   background: url(/assets/img/icon/pattern-small.svg) 0 0 no-repeat;
 
   background-size: cover;
@@ -907,11 +906,11 @@ body {
 }
 
 .blog {
-  padding-bottom: 80px;
+  padding: 80px;
 
   &__body {
     &--lists {
-
+      padding-top: 70px;
       margin-bottom: 40px;
 
     }
@@ -1064,11 +1063,11 @@ body {
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
     }
 
     &--item {
@@ -1104,11 +1103,11 @@ body {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         opacity: .7;
       }
 
@@ -1118,44 +1117,62 @@ body {
 
 /*------------------Page Contacts-------------------------*/
 .contacts {
-  &__columns{
+  &__columns {
     padding: 70px 0 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  &__column{
-    &--title{
+
+  &__column {
+    &--title {
       margin-bottom: 50px;
     }
-    &--lists{}
-    &--item{
+
+    &--lists {}
+
+    &--item {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       margin-bottom: 50px;
     }
-    &--img{
+
+    &--img {
       margin-right: 20px;
     }
-    &--contact{
+
+    &--contact {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
-      &-title{
+
+      &-title {
         font-weight: 700;
         margin-bottom: 10px;
       }
-      &-text{
+
+      &-text {
         color: #0C2855;
-        &:not(:last-child){
+
+        &:not(:last-child) {
           margin-bottom: 8px;
         }
       }
     }
 
-    &--form{
+    &--form {
       background: #f3f3f3;
       padding: 50px;
-      .form{
-        &__title{
+
+      .form {
+        &__title {
           font-weight: 700;
           font-size: 20px;
           line-height: 27px;
@@ -1163,24 +1180,33 @@ body {
           text-transform: uppercase;
           color: #0C2855;
         }
-        &__fields{
+
+        &__fields {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 30px;
-          &--box{
+
+          &--box {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
             margin-bottom: 30px;
-            label{
+
+            label {
               margin-bottom: 5px;
             }
-            input{
+
+            input {
               padding: 15px 20px;
               font-size: 14px;
               line-height: 19px;
               width: 100%;
 
-              &:focus{
+              &:focus {
                 border: 1px solid #0C2855;
                 color: #0C2855;
               }
@@ -1232,15 +1258,15 @@ body {
 
     &__title::before {
       -webkit-transform: rotate(40deg);
-          -ms-transform: rotate(40deg);
-              transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+      transform: rotate(40deg);
       left: 0;
     }
 
     &__title::after {
       -webkit-transform: rotate(-40deg);
-          -ms-transform: rotate(-40deg);
-              transform: rotate(-40deg);
+      -ms-transform: rotate(-40deg);
+      transform: rotate(-40deg);
       left: 8px;
     }
 
@@ -1251,14 +1277,14 @@ body {
 
     &__title.active::before {
       -webkit-transform: rotate(-40deg);
-          -ms-transform: rotate(-40deg);
-              transform: rotate(-40deg);
+      -ms-transform: rotate(-40deg);
+      transform: rotate(-40deg);
     }
 
     &__title.active::after {
       -webkit-transform: rotate(40deg);
-          -ms-transform: rotate(40deg);
-              transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+      transform: rotate(40deg);
     }
   }
 
