@@ -39,7 +39,6 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".catalog__home--lists").slick({
     infinite: true,
-    autoplay: true,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 2,

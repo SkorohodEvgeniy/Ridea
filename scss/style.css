@@ -1125,7 +1125,7 @@ body {
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
   overflow-y: hidden;
-  max-height: 500px;
+  min-height: 440px;
 }
 .catalog__home--item:hover {
   background: linear-gradient(147.14deg, rgba(255, 255, 255, 0.5) 19.62%, #FFFFFF 55.38%), url(/assets/img/catalog/category-bg.png) 0 0 repeat, #fff;
@@ -1726,6 +1726,9 @@ body.blogs .blog__body--item {
   .catalog__home--lists {
     grid-template-columns: 1fr;
   }
+  .catalog__home--item {
+    min-height: 360px;
+  }
   .catalog__home--item-title {
     font-size: 1rem;
     line-height: 22px;
@@ -1778,7 +1781,7 @@ body.blogs .blog__body--item {
   }
   .catalog__home--item {
     margin-bottom: 20px;
-    min-height: 250px;
+    min-height: 381px;
   }
   .catalog__home--item-img {
     padding-top: 30px;
