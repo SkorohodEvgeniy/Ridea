@@ -1116,6 +1116,7 @@ body {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 20px;
+    padding-bottom: 80px;
   }
 
   &__card {
@@ -1133,15 +1134,38 @@ body {
       -webkit-transition: all ease .5s;
       -o-transition: all ease .5s;
       transition: all ease .5s;
-      width: 220px;
-      height: 220px;
+      max-height: 220px;
+      overflow: hidden;
+      position: relative;
+      height: 100%;
 
       img {
         -o-object-fit: cover;
         object-fit: cover;
+        height: 100%;
       }
     }
 
+    &--link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      padding: 10px 40px;
+      background: #00B18B;
+      border-radius: 100px;
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      -webkit-transition: all ease .5s;
+      -o-transition: all ease .5s;
+      transition: all ease .5s;
+      display: none;
+    }
 
     &--text {
       font-size: 16px;
@@ -1159,6 +1183,8 @@ body {
       -webkit-transition: all ease 1s;
       -o-transition: all ease 1s;
       transition: all ease 1s;
+      display: inline-block;
+      color: #0c2855;
     }
 
     &:hover {
@@ -1167,10 +1193,15 @@ body {
 
       }
 
-      .catalog__card--title {
+      .catalog__card--text .catalog__card--title {
         overflow: visible;
         height: auto;
       }
+
+      .catalog__card--link {
+        display: block;
+      }
+
 
     }
 
