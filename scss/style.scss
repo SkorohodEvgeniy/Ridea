@@ -908,7 +908,7 @@ body {
     background-color: #A5DDE2;
 
     &--lists {
-      
+
       &.slick-initialized .slick-slide {
         margin: 0 10px;
       }
@@ -1043,7 +1043,8 @@ body {
 
           font-weight: 400;
           font-size: 24px;
-          line-height: 33px;
+          line-height: 137.5%;
+          /* 33/24 */
           color: #0C2855;
           padding: 10px;
         }

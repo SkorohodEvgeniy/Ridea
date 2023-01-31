@@ -186,6 +186,7 @@
                     line-height: 22px;
                     padding: 0;
                 }
+
                 min-height: 360px;
             }
         }
@@ -264,7 +265,8 @@
 
             &--item {
                 margin-bottom: 20px;
-                min-height: 381px;
+                min-height: 421px;
+
                 &-img {
                     padding-top: 30px;
 
@@ -311,13 +313,17 @@
 
     }
 
-    .exchange{
-        .columns{
+    .exchange {
+        .columns {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
             flex-direction: column;
             gap: 0;
         }
     }
-    .block__grey{
+
+    .block__grey {
         padding: 40px;
     }
 }
@@ -376,6 +382,19 @@
                 }
             }
         }
+    }
+}
+
+@media(max-width: 713px) {
+    .catalog {
+        &__home {
+
+            &--item {
+                min-height: 410px;
+
+            }
+        }
+
     }
 }
 
@@ -570,6 +589,10 @@
         &__home {
             &--lists {
                 grid-template-columns: 1fr;
+
+                &.slick-initialized .slick-slide {
+                    margin: 0 5px;
+                }
             }
 
             &--item {
@@ -577,7 +600,23 @@
                     padding: 20px 5px;
                 }
 
+                min-height: 300px;
+                margin-bottom: 10px;
+                display: -webkit-box !important;
+                display: -ms-flexbox !important;
+                display: flex !important;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+
+                &-title {
+                    a {
+                        font-size: 16px;
+                        padding: 10px 5px;
+                    }
+                }
             }
+
         }
 
     }
@@ -591,5 +630,25 @@
 
             }
         }
+    }
+}
+
+@media(max-width: 376px) {
+    .catalog {
+        &__home {
+
+
+            &--item {
+
+
+                min-height: 230px;
+
+                &-title {
+                    margin-bottom: 15px;
+                }
+            }
+
+        }
+
     }
 }
