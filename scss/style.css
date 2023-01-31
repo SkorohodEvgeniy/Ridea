@@ -1269,7 +1269,8 @@ body {
 .catalog__card--link {
   font-weight: 400;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 135.714286%;
+  /* 19/14 */
   text-transform: uppercase;
   color: #FFFFFF;
   padding: 10px 40px;
@@ -1285,6 +1286,13 @@ body {
   -o-transition: all ease .5s;
   transition: all ease .5s;
   display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.catalog__card--link img {
+  margin-bottom: 3px;
+  padding-left: 4px;
 }
 .catalog__card--text {
   font-size: 16px;
@@ -1312,7 +1320,9 @@ body {
   height: auto;
 }
 .catalog__card:hover .catalog__card--link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .catalog__card--price {
   font-weight: 700;

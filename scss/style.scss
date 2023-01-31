@@ -1149,7 +1149,8 @@ body {
     &--link {
       font-weight: 400;
       font-size: 14px;
-      line-height: 19px;
+      line-height: 135.714286%;
+      /* 19/14 */
       text-transform: uppercase;
       color: #FFFFFF;
       padding: 10px 40px;
@@ -1165,6 +1166,15 @@ body {
       -o-transition: all ease .5s;
       transition: all ease .5s;
       display: none;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      img {
+        margin-bottom: 3px;
+        padding-left: 4px;
+
+      }
     }
 
     &--text {
@@ -1199,7 +1209,9 @@ body {
       }
 
       .catalog__card--link {
-        display: block;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
       }
 
 
