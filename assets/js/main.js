@@ -118,6 +118,12 @@ $(document).ready(function () {
     centerMode: true,
     responsive: [
       {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
         breakpoint: 769,
         settings: {
           slidesToShow: 2,
