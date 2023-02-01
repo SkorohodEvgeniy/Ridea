@@ -115,6 +115,22 @@ $(document).ready(function () {
     dots: false,
     slidesToShow: 4,
     slidesToScroll: 2,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 476,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+        },
+      },
+    ],
   });
 });
 

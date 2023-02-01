@@ -191,6 +191,11 @@
             }
         }
 
+        &__card {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 1 calc((100% / 4) - 1rem);
+            flex: 0 1 calc((100% / 4) - 1rem);
+        }
     }
 
     .footer {
@@ -272,6 +277,12 @@
 
                 }
             }
+        }
+
+        &__card {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 1 calc((100% / 3) - 1rem);
+            flex: 0 1 calc((100% / 3) - 1rem);
         }
 
     }
@@ -606,8 +617,8 @@
                 display: -ms-flexbox !important;
                 display: flex !important;
                 -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
 
                 &-title {
                     a {
@@ -619,6 +630,11 @@
 
         }
 
+        &__card {
+            -webkit-box-flex: 0;
+                -ms-flex: 0 1 calc((100% / 2) - 1rem);
+                    flex: 0 1 calc((100% / 2) - 1rem);
+        }
     }
 
     .contacts {

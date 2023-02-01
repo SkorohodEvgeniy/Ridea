@@ -1135,6 +1135,7 @@ body {
       -o-transition: all ease .5s;
       transition: all ease .5s;
       max-height: 220px;
+      min-height: 220px;
       overflow: hidden;
       position: relative;
       height: 100%;
@@ -1187,14 +1188,17 @@ body {
 
     &--title {
       font-weight: 400;
-      margin-bottom: 10px;
-      height: 22px;
-      overflow: hidden;
+      margin-bottom: 20px;
       -webkit-transition: all ease 1s;
       -o-transition: all ease 1s;
       transition: all ease 1s;
-      display: inline-block;
       color: #0c2855;
+      height: 22px;
+      overflow: hidden;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
     }
 
     &:hover {
@@ -1204,8 +1208,8 @@ body {
       }
 
       .catalog__card--text .catalog__card--title {
+
         overflow: visible;
-        height: auto;
       }
 
       .catalog__card--link {
