@@ -272,9 +272,86 @@
         }
 
         &--bg {
+            color: #0C2855;
+            font-weight: 400;
             background-color: #A5DDE2;
             padding: 70px 0;
+            font-size: 16px;
+            line-height: 137.5%; /* 22/16 */
+            &-title{
+                margin-bottom: 20px;
+                line-height: 125%; /* 20/16 */
+                font-weight: 700;
+                color: #0C2855;
+                text-transform: uppercase;
+            }
+            &-lists{
+                li{
+                    list-style: disc;
+                    &:not(:last-child){
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            .sm-3{
+                position: relative;
+                &:not(:last-child){
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: -20px;
+                        border-right: 1px solid #fff;
+                    }
+                }
+            }
+            
         }
 
+        &--data{
+            padding: 70px 0 80px;
+            &-title{
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 110%; /* 22/20 */
+                color: #0C2855;
+                margin-bottom: 30px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            &-table{
+                table{
+                    width: 100%;
+                    border-collapse: collapse;
+                    tr{
+                        &:nth-child(odd){
+                            background-color: #f3f3f3;
+                        }
+                        td{
+                            padding: 10px 0;
+                            font-size: 16px;
+                            line-height: 137.5%; /* 22/16 */
+                            color: #0C2855;
+                        &:first-child{
+                            padding-left: 100px;
+                            font-weight: 700;
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__similar{
+        .catalog{
+            &__cards{
+                display: flex;
+    
+            }
+            &__card{
+                flex: 1 1 calc((100% / 4) - 1rem);
+            }
+        }
     }
 }

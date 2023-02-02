@@ -140,6 +140,20 @@ $(document).ready(function () {
   });
 });
 
+/*-----------------Slider Product---------------------------*/
+$(document).ready(function () {
+  $(".productSliderBig").slick({
+    
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    dots: false,
+    asNavFor: '.product__slider--thumn',
+  });
+});
+
+
+
 /**--------------Pop UP------------------------- */
 
 let showClass = document.querySelector(".popup__body");
