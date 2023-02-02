@@ -2058,8 +2058,16 @@ body.blogs .blog__body--item {
 }
 .product__similar .catalog__card {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 calc((100% / 4) - 1rem);
-          flex: 1 1 calc((100% / 4) - 1rem);
+  -ms-flex: 1 1 calc((100% / 4) - 1rem);
+  flex: 1 1 calc((100% / 4) - 1rem);
+}
+.product__slider--big {
+  width: 80%;
+  float: right;
+}
+.product__slider--small {
+  width: 15%;
+  float: right;
 }
 
 @media (min-width: 1025px) {

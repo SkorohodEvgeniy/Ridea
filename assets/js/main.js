@@ -143,20 +143,23 @@ $(document).ready(function () {
 /*-----------------Slider Product---------------------------*/
 $(document).ready(function () {
   $(".product__slider--big").slick({
-    infinite: true,
     speed: 300,
     slidesToShow: 1,
+    slidesToScroll: 1,
     dots: false,
     asNavFor: ".product__slider--small",
   });
 });
 $(document).ready(function () {
   $(".product__slider--small").slick({
-    infinite: true,
     speed: 300,
-    slidesToShow: 3,
+    slidesToShow: 6,
     dots: false,
     asNavFor: ".product__slider--big",
+    vertical: true,
+    verticalSwiping: true,
+    arrows: false,
+    focusOnSelect: true,
   });
 });
 
