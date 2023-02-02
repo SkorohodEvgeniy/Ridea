@@ -180,8 +180,7 @@ $(document).ready(function () {
 let linkActive = document.querySelectorAll(".posted_in a");
 
 linkActive.forEach(function (userItem) {
-  userItem.addEventListener("click", function (e) {
-    this.classList.add("check-link");
+  userItem.addEventListener("click", function () {
+    this.classList.toggle("check-link");
   });
-  userItem.classList.remove("check-link");
 });
