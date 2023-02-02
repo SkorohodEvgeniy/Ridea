@@ -174,3 +174,14 @@ $(document).ready(function () {
     $(this).toggleClass("active").next().slideToggle(300);
   });
 });
+
+/*------Link in card--------------- */
+
+let linkActive = document.querySelectorAll(".posted_in a");
+
+linkActive.forEach(function (userItem) {
+  userItem.addEventListener("click", function (e) {
+    this.classList.add("check-link");
+  });
+  userItem.classList.remove("check-link");
+});

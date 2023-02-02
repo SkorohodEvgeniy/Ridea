@@ -1742,14 +1742,6 @@ body.blogs .blog__body--item {
 }
 .product__body {
   padding: 70px 0 80px;
-  /* для элемента label связанного с .custom-radio */
-  /* создание в label псевдоэлемента  before со следующими стилями */
-  /* стили при наведении курсора на радио */
-  /* стили для активной радиокнопки (при нажатии на неё) */
-  /* стили для радиокнопки, находящейся в фокусе */
-  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
-  /* стили для радиокнопки, находящейся в состоянии checked */
-  /* стили для радиокнопки, находящейся в состоянии disabled */
 }
 .product__body--sku {
   font-weight: 400;
@@ -1790,6 +1782,14 @@ body.blogs .blog__body--item {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  /* для элемента label связанного с .custom-radio */
+  /* создание в label псевдоэлемента  before со следующими стилями */
+  /* стили при наведении курсора на радио */
+  /* стили для активной радиокнопки (при нажатии на неё) */
+  /* стили для радиокнопки, находящейся в фокусе */
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  /* стили для радиокнопки, находящейся в состоянии disabled */
 }
 .product__body--color form > div:not(:last-child) {
   margin-right: 40px;
@@ -1798,8 +1798,70 @@ body.blogs .blog__body--item {
   width: 30px;
   height: 30px;
 }
-.product__body--color form > div label {
-  margin-left: 10px;
+.product__body--color form > div .custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.product__body--color form > div .custom-radio + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.product__body--color form > div .custom-radio + label::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 77% 80%;
+}
+.product__body--color form > div .custom-radio:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #000;
+}
+.product__body--color form > div .custom-radio:not(:disabled):active + label::before {
+  background-color: #b3d7ff;
+  border-color: #000;
+}
+.product__body--color form > div .custom-radio:focus + label::before {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.product__body--color form > div .custom-radio:focus:not(:checked) + label::before {
+  border-color: #000;
+}
+.product__body--color form > div .custom-radio:checked + label::before {
+  border-color: #000;
+  background-color: #fff;
+  background-image: url(/assets/img/icon/radio.svg);
+}
+.product__body--color form > div .custom-radio:disabled + label::before {
+  background-color: #919191;
+}
+.product__body--color form > div .custom-radio:disabled + label::before {
+  background-color: #e9ecef;
+}
+.product__body--color form > div body {
+  padding: 20px 50px;
+}
+.product__body--color form > div .radio {
+  margin-bottom: 0.4em;
 }
 .product__body--complection {
   margin-bottom: 30px;
@@ -1816,10 +1878,26 @@ body.blogs .blog__body--item {
   color: #919191;
   border: 1px solid #919191;
   display: inline-block;
-  padding: 5px 15px;
+  padding: 5px 15px 5px 45px;
+  position: relative;
 }
 .product__body--complection.product_meta .posted_in a:hover {
   color: #0C2855;
+}
+.product__body--complection.product_meta .posted_in a::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: #A5DDE2;
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.product__body--complection.product_meta .posted_in a.check-link::before {
+  background: url(/assets/img/icon/link-check.svg);
 }
 .product__body--price {
   -webkit-box-pack: justify;
@@ -1873,71 +1951,6 @@ body.blogs .blog__body--item {
 }
 .product__body--price .btn__buy:hover {
   background: #0C2855;
-}
-.product__body .custom-radio {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-.product__body .custom-radio + label {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.product__body .custom-radio + label::before {
-  content: '';
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-flex: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-  border: 1px solid #adb5bd;
-  border-radius: 50%;
-  margin-right: 0.5em;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 77% 80%;
-}
-.product__body .custom-radio:not(:disabled):not(:checked) + label:hover::before {
-  border-color: #000;
-}
-.product__body .custom-radio:not(:disabled):active + label::before {
-  background-color: #b3d7ff;
-  border-color: #000;
-}
-.product__body .custom-radio:focus + label::before {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-.product__body .custom-radio:focus:not(:checked) + label::before {
-  border-color: #000;
-}
-.product__body .custom-radio:checked + label::before {
-  border-color: #000;
-  background-color: #fff;
-  background-image: url(/assets/img/icon/radio.svg);
-}
-.product__body .custom-radio:disabled + label::before {
-  background-color: #919191;
-}
-.product__body .custom-radio:disabled + label::before {
-  background-color: #e9ecef;
-}
-.product__body body {
-  padding: 20px 50px;
-}
-.product__body .radio {
-  margin-bottom: 0.4em;
 }
 
 @media (min-width: 1025px) {
