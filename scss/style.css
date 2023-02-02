@@ -632,6 +632,7 @@ body {
   padding: 60px 0 40px;
 }
 .heading__box--title {
+  font-family: 'Xolonium';
   font-weight: 700;
   font-size: 40px;
   line-height: 48px;
@@ -746,6 +747,7 @@ body {
   color: #fff;
 }
 .breadcrumbs__title {
+  font-family: 'Xolonium';
   font-weight: 700;
   font-size: 40px;
   line-height: 48px;
@@ -851,9 +853,12 @@ body {
   margin-bottom: 30px;
 }
 
-p,
-ul li {
+p {
   margin-bottom: 15px;
+  line-height: 137%;
+}
+
+ul li {
   line-height: 137%;
 }
 
@@ -986,14 +991,16 @@ body {
   margin-bottom: 10px;
 }
 .slider__first--item-title {
+  font-family: 'Xolonium';
   font-weight: 700;
   font-size: 50px;
-  line-height: 60px;
+  line-height: 120%;
+  /* 60/50 */
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  max-width: 680px;
+  max-width: 800px;
 }
 .slider__first--item-img {
   max-width: 328px;
@@ -1165,6 +1172,9 @@ body {
 }
 .catalog__home--link {
   text-align: center;
+}
+.catalog .breadcrumbs__title {
+  margin-bottom: 20px;
 }
 .catalog__category {
   display: -webkit-box;
@@ -1726,6 +1736,32 @@ body.blogs .blog__body--item {
 }
 .product .breadcrumbs__lists ul {
   margin-bottom: 0;
+}
+.product__body--sku {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135.714286%;
+  /* 19/14 */
+  color: #919191;
+  margin-bottom: 10px;
+}
+.product__body--title {
+  font-family: 'Xolonium';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  /* 36/30 */
+  text-transform: uppercase;
+  color: #0C2855;
+  margin-bottom: 30px;
+}
+.product__body--description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 137.5%;
+  /* 22/16 */
+  color: #0C2855;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 1025px) {
