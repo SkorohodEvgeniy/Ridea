@@ -807,6 +807,11 @@ body {
   -ms-flex: 1 1 calc((100% / 2) - 2rem);
   flex: 1 1 calc((100% / 2) - 2rem);
 }
+.columns .sm-3 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 calc((100% / 3) - 2rem);
+  flex: 1 1 calc((100% / 3) - 2rem);
+}
 
 .article {
   padding-bottom: 80px;
@@ -851,6 +856,10 @@ body {
 
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.mr-10 {
+  margin-right: 10px;
 }
 
 p {
@@ -901,6 +910,16 @@ hr {
   -ms-flex-pack: center;
   justify-content: center;
   opacity: .7;
+}
+.d-flex.align-start {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.d-flex.align-end {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 /*----Footer down (Липкий Footer)---------*/
@@ -1956,6 +1975,10 @@ body.blogs .blog__body--item {
 .product__body--anchor {
   color: #919191;
   border-bottom: 1px dashed #919191;
+}
+.product__body--bg {
+  background-color: #A5DDE2;
+  padding: 70px 0;
 }
 
 @media (min-width: 1025px) {
