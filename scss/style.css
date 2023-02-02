@@ -807,6 +807,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 0;
+  padding-bottom: 70px;
 }
 .columns .sm-6 {
   -webkit-box-flex: 1;
@@ -2064,6 +2065,28 @@ body.blogs .blog__body--item {
 .product__slider--big {
   width: 80%;
   float: right;
+}
+.product__slider--big button {
+  position: absolute;
+  top: 50%;
+  z-index: 20;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  background-color: #A5DDE2;
+  opacity: .5;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  cursor: pointer;
+}
+.product__slider--big button:hover {
+  opacity: 1;
+}
+.product__slider--big button.slick-nextBtn {
+  right: 30px;
 }
 .product__slider--small {
   width: 15%;

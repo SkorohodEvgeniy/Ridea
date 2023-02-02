@@ -379,6 +379,33 @@
         &--big {
             width: 80%;
             float: right;
+
+            button {
+                position: absolute;
+                top: 50%;
+                z-index: 20;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                width: 40px;
+                height: 40px;
+                display: block;
+                border-radius: 50%;
+                background-color: #A5DDE2;
+                opacity: .5;
+                -webkit-transition: all ease .5s;
+                -o-transition: all ease .5s;
+                transition: all ease .5s;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                &.slick-nextBtn {
+                    right: 30px;
+                }
+            }
         }
 
         &--small {
