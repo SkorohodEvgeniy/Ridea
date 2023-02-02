@@ -508,7 +508,7 @@
 
       li {
         color: #919191;
-
+        margin-bottom: 0;
         &:not(:last-child) {
           margin-right: 20px;
         }
@@ -1777,5 +1777,7 @@ body {
 }
 
 
+
+@import 'product';
 
 @import 'media';

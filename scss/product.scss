@@ -1,0 +1,10 @@
+.product{
+    .breadcrumbs{
+        background:  url(/assets/img/icon/product-bread.svg ), #0C2855,;
+        &__lists{
+            ul{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
