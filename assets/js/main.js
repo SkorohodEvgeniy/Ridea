@@ -142,17 +142,23 @@ $(document).ready(function () {
 
 /*-----------------Slider Product---------------------------*/
 $(document).ready(function () {
-  $(".productSliderBig").slick({
-    
+  $(".product__slider--big").slick({
     infinite: true,
     speed: 300,
     slidesToShow: 1,
     dots: false,
-    asNavFor: '.product__slider--thumn',
+    asNavFor: ".product__slider--small",
   });
 });
-
-
+$(document).ready(function () {
+  $(".product__slider--small").slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    dots: false,
+    asNavFor: ".product__slider--big",
+  });
+});
 
 /**--------------Pop UP------------------------- */
 

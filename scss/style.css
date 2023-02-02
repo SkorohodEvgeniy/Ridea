@@ -802,6 +802,12 @@ body {
   flex-wrap: wrap;
   gap: 2.5rem;
 }
+.columns-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0;
+}
 .columns .sm-6 {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 calc((100% / 2) - 2rem);
@@ -860,6 +866,10 @@ body {
 
 .mr-10 {
   margin-right: 10px;
+}
+
+.sm-50 {
+  width: 50%;
 }
 
 p {
