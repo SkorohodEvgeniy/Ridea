@@ -1906,6 +1906,7 @@ body.blogs .blog__body--item {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 52px;
 }
 .product__body--price .price {
   font-weight: 400;
@@ -1951,6 +1952,10 @@ body.blogs .blog__body--item {
 }
 .product__body--price .btn__buy:hover {
   background: #0C2855;
+}
+.product__body--anchor {
+  color: #919191;
+  border-bottom: 1px dashed #919191;
 }
 
 @media (min-width: 1025px) {

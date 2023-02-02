@@ -208,6 +208,7 @@
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
+            margin-bottom: 52px;
 
             .price {
                 font-weight: 400;
@@ -265,9 +266,10 @@
             }
         }
 
-        &--btn {}
-
-
+        &--anchor {
+            color: #919191;
+            border-bottom: 1px dashed #919191;
+        }
 
     }
 }
