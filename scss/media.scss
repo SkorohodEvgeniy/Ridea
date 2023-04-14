@@ -103,7 +103,6 @@
 
 @media(max-width:1024px) {
     .header {
-        &__menu {}
 
         &__list {
             margin-bottom: 82px;
@@ -337,11 +336,12 @@
     .block__grey {
         padding: 40px;
     }
-    .product{
-        &__similar{
-            .catalog{
-                
-                &__card{
+
+    .product {
+        &__similar {
+            .catalog {
+
+                &__card {
                     flex: 1 1 calc((100% / 2) - 1rem);
                 }
             }
@@ -642,8 +642,8 @@
 
         &__card {
             -webkit-box-flex: 0;
-                -ms-flex: 0 1 calc((100% / 2) - 1rem);
-                    flex: 0 1 calc((100% / 2) - 1rem);
+            -ms-flex: 0 1 calc((100% / 2) - 1rem);
+            flex: 0 1 calc((100% / 2) - 1rem);
         }
     }
 
